@@ -133,6 +133,11 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageLogs = new System.Windows.Forms.TabPage();
             this.dataGridViewLogger = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCanceledOrders)).BeginInit();
             this.tabPageSettings.SuspendLayout();
             this.gpBoxMaxHoursToSend.SuspendLayout();
@@ -158,6 +163,11 @@
             this.tabControl1.SuspendLayout();
             this.tabPageLogs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLogger)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // count_of_canceled_orders
@@ -281,7 +291,7 @@
             this.tabPageSettings.Location = new System.Drawing.Point(4, 44);
             this.tabPageSettings.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageSettings.Name = "tabPageSettings";
-            this.tabPageSettings.Size = new System.Drawing.Size(1192, 752);
+            this.tabPageSettings.Size = new System.Drawing.Size(1255, 705);
             this.tabPageSettings.TabIndex = 4;
             this.tabPageSettings.Text = "Settings";
             this.tabPageSettings.UseVisualStyleBackColor = true;
@@ -295,18 +305,18 @@
             this.gpBoxMaxHoursToSend.Controls.Add(this.lblMaxHours);
             this.gpBoxMaxHoursToSend.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpBoxMaxHoursToSend.ForeColor = System.Drawing.Color.DarkRed;
-            this.gpBoxMaxHoursToSend.Location = new System.Drawing.Point(6, 530);
+            this.gpBoxMaxHoursToSend.Location = new System.Drawing.Point(7, 562);
             this.gpBoxMaxHoursToSend.Margin = new System.Windows.Forms.Padding(2);
             this.gpBoxMaxHoursToSend.Name = "gpBoxMaxHoursToSend";
             this.gpBoxMaxHoursToSend.Padding = new System.Windows.Forms.Padding(2);
-            this.gpBoxMaxHoursToSend.Size = new System.Drawing.Size(525, 180);
+            this.gpBoxMaxHoursToSend.Size = new System.Drawing.Size(524, 149);
             this.gpBoxMaxHoursToSend.TabIndex = 18;
             this.gpBoxMaxHoursToSend.TabStop = false;
             this.gpBoxMaxHoursToSend.Text = "Max Hours For Sending";
             // 
             // numericUpForHours
             // 
-            this.numericUpForHours.Location = new System.Drawing.Point(190, 73);
+            this.numericUpForHours.Location = new System.Drawing.Point(191, 78);
             this.numericUpForHours.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpForHours.Minimum = new decimal(new int[] {
             1,
@@ -326,7 +336,7 @@
             // btn_save_MaxHours
             // 
             this.btn_save_MaxHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save_MaxHours.Location = new System.Drawing.Point(302, 67);
+            this.btn_save_MaxHours.Location = new System.Drawing.Point(303, 72);
             this.btn_save_MaxHours.Margin = new System.Windows.Forms.Padding(2);
             this.btn_save_MaxHours.Name = "btn_save_MaxHours";
             this.btn_save_MaxHours.Size = new System.Drawing.Size(98, 40);
@@ -339,7 +349,7 @@
             // 
             this.lblMaxHours.AutoSize = true;
             this.lblMaxHours.ForeColor = System.Drawing.Color.Black;
-            this.lblMaxHours.Location = new System.Drawing.Point(52, 75);
+            this.lblMaxHours.Location = new System.Drawing.Point(53, 80);
             this.lblMaxHours.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblMaxHours.Name = "lblMaxHours";
             this.lblMaxHours.Size = new System.Drawing.Size(125, 29);
@@ -350,17 +360,14 @@
             // 
             this.grpBoxAllowedStores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpBoxAllowedStores.Controls.Add(this.label23);
-            this.grpBoxAllowedStores.Controls.Add(this.btn_Stores_Save);
-            this.grpBoxAllowedStores.Controls.Add(this.textBoxStores);
-            this.grpBoxAllowedStores.Controls.Add(this.label24);
+            this.grpBoxAllowedStores.Controls.Add(this.panel5);
             this.grpBoxAllowedStores.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxAllowedStores.ForeColor = System.Drawing.Color.DarkRed;
-            this.grpBoxAllowedStores.Location = new System.Drawing.Point(554, 522);
+            this.grpBoxAllowedStores.Location = new System.Drawing.Point(554, 562);
             this.grpBoxAllowedStores.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxAllowedStores.Name = "grpBoxAllowedStores";
             this.grpBoxAllowedStores.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxAllowedStores.Size = new System.Drawing.Size(568, 188);
+            this.grpBoxAllowedStores.Size = new System.Drawing.Size(679, 147);
             this.grpBoxAllowedStores.TabIndex = 10;
             this.grpBoxAllowedStores.TabStop = false;
             this.grpBoxAllowedStores.Text = "Allowed stores";
@@ -369,7 +376,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label23.Location = new System.Drawing.Point(24, 166);
+            this.label23.Location = new System.Drawing.Point(2, 115);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(678, 29);
@@ -379,8 +386,9 @@
             // 
             // btn_Stores_Save
             // 
+            this.btn_Stores_Save.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Stores_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Stores_Save.Location = new System.Drawing.Point(456, 75);
+            this.btn_Stores_Save.Location = new System.Drawing.Point(448, 38);
             this.btn_Stores_Save.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Stores_Save.Name = "btn_Stores_Save";
             this.btn_Stores_Save.Size = new System.Drawing.Size(97, 54);
@@ -391,18 +399,20 @@
             // 
             // textBoxStores
             // 
-            this.textBoxStores.Location = new System.Drawing.Point(182, 20);
+            this.textBoxStores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxStores.Location = new System.Drawing.Point(177, 2);
             this.textBoxStores.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxStores.Multiline = true;
             this.textBoxStores.Name = "textBoxStores";
-            this.textBoxStores.Size = new System.Drawing.Size(260, 130);
+            this.textBoxStores.Size = new System.Drawing.Size(240, 100);
             this.textBoxStores.TabIndex = 5;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label24.Location = new System.Drawing.Point(10, 71);
+            this.label24.Location = new System.Drawing.Point(2, 34);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(149, 29);
@@ -413,20 +423,14 @@
             // 
             this.grpBoxLogDetails.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpBoxLogDetails.Controls.Add(this.label15);
-            this.grpBoxLogDetails.Controls.Add(this.numericClearLogInterval);
-            this.grpBoxLogDetails.Controls.Add(this.cmbClearLogInterval);
-            this.grpBoxLogDetails.Controls.Add(this.btnSaveLogs);
-            this.grpBoxLogDetails.Controls.Add(this.txtLogFolderName);
-            this.grpBoxLogDetails.Controls.Add(this.label13);
-            this.grpBoxLogDetails.Controls.Add(this.label14);
+            this.grpBoxLogDetails.Controls.Add(this.panel3);
             this.grpBoxLogDetails.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxLogDetails.ForeColor = System.Drawing.Color.DarkRed;
-            this.grpBoxLogDetails.Location = new System.Drawing.Point(554, 249);
+            this.grpBoxLogDetails.Location = new System.Drawing.Point(554, 253);
             this.grpBoxLogDetails.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxLogDetails.Name = "grpBoxLogDetails";
             this.grpBoxLogDetails.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxLogDetails.Size = new System.Drawing.Size(568, 137);
+            this.grpBoxLogDetails.Size = new System.Drawing.Size(679, 143);
             this.grpBoxLogDetails.TabIndex = 10;
             this.grpBoxLogDetails.TabStop = false;
             this.grpBoxLogDetails.Text = "Log Details";
@@ -436,7 +440,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label15.Location = new System.Drawing.Point(117, 103);
+            this.label15.Location = new System.Drawing.Point(104, 76);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(128, 29);
@@ -445,7 +449,7 @@
             // 
             // numericClearLogInterval
             // 
-            this.numericClearLogInterval.Location = new System.Drawing.Point(264, 103);
+            this.numericClearLogInterval.Location = new System.Drawing.Point(251, 76);
             this.numericClearLogInterval.Margin = new System.Windows.Forms.Padding(2);
             this.numericClearLogInterval.Name = "numericClearLogInterval";
             this.numericClearLogInterval.Size = new System.Drawing.Size(58, 34);
@@ -456,17 +460,18 @@
             this.cmbClearLogInterval.DisplayMember = "Name";
             this.cmbClearLogInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbClearLogInterval.FormattingEnabled = true;
-            this.cmbClearLogInterval.Location = new System.Drawing.Point(350, 102);
+            this.cmbClearLogInterval.Location = new System.Drawing.Point(337, 75);
             this.cmbClearLogInterval.Margin = new System.Windows.Forms.Padding(2);
             this.cmbClearLogInterval.Name = "cmbClearLogInterval";
-            this.cmbClearLogInterval.Size = new System.Drawing.Size(92, 35);
+            this.cmbClearLogInterval.Size = new System.Drawing.Size(134, 35);
             this.cmbClearLogInterval.TabIndex = 12;
             this.cmbClearLogInterval.ValueMember = "ID";
             // 
             // btnSaveLogs
             // 
+            this.btnSaveLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveLogs.Location = new System.Drawing.Point(456, 42);
+            this.btnSaveLogs.Location = new System.Drawing.Point(436, 26);
             this.btnSaveLogs.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveLogs.Name = "btnSaveLogs";
             this.btnSaveLogs.Size = new System.Drawing.Size(103, 48);
@@ -477,7 +482,7 @@
             // 
             // txtLogFolderName
             // 
-            this.txtLogFolderName.Location = new System.Drawing.Point(157, 37);
+            this.txtLogFolderName.Location = new System.Drawing.Point(144, 23);
             this.txtLogFolderName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLogFolderName.Name = "txtLogFolderName";
             this.txtLogFolderName.Size = new System.Drawing.Size(261, 34);
@@ -487,7 +492,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label13.Location = new System.Drawing.Point(20, 103);
+            this.label13.Location = new System.Drawing.Point(7, 76);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(110, 29);
@@ -498,7 +503,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label14.Location = new System.Drawing.Point(15, 40);
+            this.label14.Location = new System.Drawing.Point(2, 26);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(116, 29);
@@ -509,26 +514,14 @@
             // 
             this.grpBoxDispatchOrders.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpBoxDispatchOrders.Controls.Add(this.numericUpDown3);
-            this.grpBoxDispatchOrders.Controls.Add(this.label11);
-            this.grpBoxDispatchOrders.Controls.Add(this.label5);
-            this.grpBoxDispatchOrders.Controls.Add(this.numericReviewsOrderInterval);
-            this.grpBoxDispatchOrders.Controls.Add(this.cmbPostReviewsInterval);
-            this.grpBoxDispatchOrders.Controls.Add(this.label9);
-            this.grpBoxDispatchOrders.Controls.Add(this.numericUpDown2);
-            this.grpBoxDispatchOrders.Controls.Add(this.btnSaveTimers);
-            this.grpBoxDispatchOrders.Controls.Add(this.label16);
-            this.grpBoxDispatchOrders.Controls.Add(this.label10);
-            this.grpBoxDispatchOrders.Controls.Add(this.numericPostOrderInterval);
-            this.grpBoxDispatchOrders.Controls.Add(this.cmbPostOrderInterval);
-            this.grpBoxDispatchOrders.Controls.Add(this.label6);
+            this.grpBoxDispatchOrders.Controls.Add(this.panel2);
             this.grpBoxDispatchOrders.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxDispatchOrders.ForeColor = System.Drawing.Color.DarkRed;
             this.grpBoxDispatchOrders.Location = new System.Drawing.Point(554, 18);
             this.grpBoxDispatchOrders.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxDispatchOrders.Name = "grpBoxDispatchOrders";
             this.grpBoxDispatchOrders.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxDispatchOrders.Size = new System.Drawing.Size(568, 227);
+            this.grpBoxDispatchOrders.Size = new System.Drawing.Size(679, 227);
             this.grpBoxDispatchOrders.TabIndex = 5;
             this.grpBoxDispatchOrders.TabStop = false;
             this.grpBoxDispatchOrders.Text = "Dispatch Orders";
@@ -536,7 +529,7 @@
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(298, 87);
+            this.numericUpDown3.Location = new System.Drawing.Point(349, 50);
             this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(58, 34);
@@ -546,7 +539,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(10, 87);
+            this.label11.Location = new System.Drawing.Point(22, 52);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(284, 29);
@@ -558,7 +551,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(177, 193);
+            this.label5.Location = new System.Drawing.Point(186, 158);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 24);
@@ -567,7 +560,7 @@
             // 
             // numericReviewsOrderInterval
             // 
-            this.numericReviewsOrderInterval.Location = new System.Drawing.Point(301, 186);
+            this.numericReviewsOrderInterval.Location = new System.Drawing.Point(346, 156);
             this.numericReviewsOrderInterval.Margin = new System.Windows.Forms.Padding(2);
             this.numericReviewsOrderInterval.Name = "numericReviewsOrderInterval";
             this.numericReviewsOrderInterval.Size = new System.Drawing.Size(58, 34);
@@ -578,10 +571,10 @@
             this.cmbPostReviewsInterval.DisplayMember = "Name";
             this.cmbPostReviewsInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPostReviewsInterval.FormattingEnabled = true;
-            this.cmbPostReviewsInterval.Location = new System.Drawing.Point(397, 188);
+            this.cmbPostReviewsInterval.Location = new System.Drawing.Point(453, 150);
             this.cmbPostReviewsInterval.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPostReviewsInterval.Name = "cmbPostReviewsInterval";
-            this.cmbPostReviewsInterval.Size = new System.Drawing.Size(92, 35);
+            this.cmbPostReviewsInterval.Size = new System.Drawing.Size(116, 35);
             this.cmbPostReviewsInterval.TabIndex = 15;
             this.cmbPostReviewsInterval.ValueMember = "ID";
             // 
@@ -589,7 +582,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(13, 191);
+            this.label9.Location = new System.Drawing.Point(22, 156);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(146, 29);
@@ -598,7 +591,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(295, 45);
+            this.numericUpDown2.Location = new System.Drawing.Point(346, 8);
             this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(58, 34);
@@ -607,8 +600,9 @@
             // 
             // btnSaveTimers
             // 
+            this.btnSaveTimers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveTimers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveTimers.Location = new System.Drawing.Point(456, 102);
+            this.btnSaveTimers.Location = new System.Drawing.Point(558, 70);
             this.btnSaveTimers.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveTimers.Name = "btnSaveTimers";
             this.btnSaveTimers.Size = new System.Drawing.Size(97, 45);
@@ -621,7 +615,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label16.Location = new System.Drawing.Point(10, 45);
+            this.label16.Location = new System.Drawing.Point(22, 10);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(271, 29);
@@ -633,7 +627,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(163, 146);
+            this.label10.Location = new System.Drawing.Point(172, 111);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(107, 24);
@@ -642,7 +636,7 @@
             // 
             // numericPostOrderInterval
             // 
-            this.numericPostOrderInterval.Location = new System.Drawing.Point(274, 141);
+            this.numericPostOrderInterval.Location = new System.Drawing.Point(319, 111);
             this.numericPostOrderInterval.Margin = new System.Windows.Forms.Padding(2);
             this.numericPostOrderInterval.Name = "numericPostOrderInterval";
             this.numericPostOrderInterval.Size = new System.Drawing.Size(58, 34);
@@ -653,10 +647,10 @@
             this.cmbPostOrderInterval.DisplayMember = "Name";
             this.cmbPostOrderInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPostOrderInterval.FormattingEnabled = true;
-            this.cmbPostOrderInterval.Location = new System.Drawing.Point(346, 140);
+            this.cmbPostOrderInterval.Location = new System.Drawing.Point(402, 102);
             this.cmbPostOrderInterval.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPostOrderInterval.Name = "cmbPostOrderInterval";
-            this.cmbPostOrderInterval.Size = new System.Drawing.Size(92, 35);
+            this.cmbPostOrderInterval.Size = new System.Drawing.Size(115, 35);
             this.cmbPostOrderInterval.TabIndex = 3;
             this.cmbPostOrderInterval.ValueMember = "ID";
             this.cmbPostOrderInterval.SelectedIndexChanged += new System.EventHandler(this.cmbPostOrderInterval_SelectedIndexChanged);
@@ -665,7 +659,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(13, 144);
+            this.label6.Location = new System.Drawing.Point(22, 109);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(133, 29);
@@ -674,20 +668,17 @@
             // 
             // grpBoxAPIDetails
             // 
-            this.grpBoxAPIDetails.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.grpBoxAPIDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpBoxAPIDetails.Controls.Add(this.btnSaveAPIDetails);
-            this.grpBoxAPIDetails.Controls.Add(this.txtToken);
-            this.grpBoxAPIDetails.Controls.Add(this.txtAPIURL);
-            this.grpBoxAPIDetails.Controls.Add(this.label7);
-            this.grpBoxAPIDetails.Controls.Add(this.label8);
+            this.grpBoxAPIDetails.Controls.Add(this.panel4);
             this.grpBoxAPIDetails.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxAPIDetails.ForeColor = System.Drawing.Color.DarkRed;
-            this.grpBoxAPIDetails.Location = new System.Drawing.Point(554, 390);
+            this.grpBoxAPIDetails.Location = new System.Drawing.Point(554, 403);
             this.grpBoxAPIDetails.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxAPIDetails.Name = "grpBoxAPIDetails";
             this.grpBoxAPIDetails.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxAPIDetails.Size = new System.Drawing.Size(568, 128);
+            this.grpBoxAPIDetails.Size = new System.Drawing.Size(679, 148);
             this.grpBoxAPIDetails.TabIndex = 4;
             this.grpBoxAPIDetails.TabStop = false;
             this.grpBoxAPIDetails.Text = "API Details";
@@ -695,8 +686,9 @@
             // 
             // btnSaveAPIDetails
             // 
+            this.btnSaveAPIDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveAPIDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveAPIDetails.Location = new System.Drawing.Point(456, 66);
+            this.btnSaveAPIDetails.Location = new System.Drawing.Point(455, 39);
             this.btnSaveAPIDetails.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveAPIDetails.Name = "btnSaveAPIDetails";
             this.btnSaveAPIDetails.Size = new System.Drawing.Size(97, 41);
@@ -707,25 +699,29 @@
             // 
             // txtToken
             // 
-            this.txtToken.Location = new System.Drawing.Point(133, 91);
+            this.txtToken.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtToken.Location = new System.Drawing.Point(132, 64);
             this.txtToken.Margin = new System.Windows.Forms.Padding(2);
             this.txtToken.Name = "txtToken";
-            this.txtToken.Size = new System.Drawing.Size(242, 34);
+            this.txtToken.Size = new System.Drawing.Size(297, 34);
             this.txtToken.TabIndex = 6;
             // 
             // txtAPIURL
             // 
-            this.txtAPIURL.Location = new System.Drawing.Point(133, 49);
+            this.txtAPIURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAPIURL.Location = new System.Drawing.Point(132, 22);
             this.txtAPIURL.Margin = new System.Windows.Forms.Padding(2);
             this.txtAPIURL.Name = "txtAPIURL";
-            this.txtAPIURL.Size = new System.Drawing.Size(242, 34);
+            this.txtAPIURL.Size = new System.Drawing.Size(297, 34);
             this.txtAPIURL.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(9, 93);
+            this.label7.Location = new System.Drawing.Point(9, 66);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(78, 29);
@@ -736,7 +732,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(10, 49);
+            this.label8.Location = new System.Drawing.Point(9, 25);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(97, 29);
@@ -747,32 +743,14 @@
             // 
             this.grpBoxDatabaseDetails.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.grpBoxDatabaseDetails.Controls.Add(this.label21);
-            this.grpBoxDatabaseDetails.Controls.Add(this.txtRoboostOrderTableName);
-            this.grpBoxDatabaseDetails.Controls.Add(this.numericUpDown1);
-            this.grpBoxDatabaseDetails.Controls.Add(this.label20);
-            this.grpBoxDatabaseDetails.Controls.Add(this.UnitsComboBox);
-            this.grpBoxDatabaseDetails.Controls.Add(this.label22);
-            this.grpBoxDatabaseDetails.Controls.Add(this.txtReviewsViewName);
-            this.grpBoxDatabaseDetails.Controls.Add(this.lblReviewName);
-            this.grpBoxDatabaseDetails.Controls.Add(this.txtNewOrdersViewName);
-            this.grpBoxDatabaseDetails.Controls.Add(this.lblOrdersViewName);
-            this.grpBoxDatabaseDetails.Controls.Add(this.btnSaveDatabaseDetails);
-            this.grpBoxDatabaseDetails.Controls.Add(this.txtPassword);
-            this.grpBoxDatabaseDetails.Controls.Add(this.txtUserName);
-            this.grpBoxDatabaseDetails.Controls.Add(this.txtDatabaseName);
-            this.grpBoxDatabaseDetails.Controls.Add(this.txtServerIP);
-            this.grpBoxDatabaseDetails.Controls.Add(this.label4);
-            this.grpBoxDatabaseDetails.Controls.Add(this.label3);
-            this.grpBoxDatabaseDetails.Controls.Add(this.label2);
-            this.grpBoxDatabaseDetails.Controls.Add(this.label1);
+            this.grpBoxDatabaseDetails.Controls.Add(this.panel1);
             this.grpBoxDatabaseDetails.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxDatabaseDetails.ForeColor = System.Drawing.Color.DarkRed;
-            this.grpBoxDatabaseDetails.Location = new System.Drawing.Point(6, 18);
+            this.grpBoxDatabaseDetails.Location = new System.Drawing.Point(2, 2);
             this.grpBoxDatabaseDetails.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxDatabaseDetails.Name = "grpBoxDatabaseDetails";
             this.grpBoxDatabaseDetails.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxDatabaseDetails.Size = new System.Drawing.Size(525, 508);
+            this.grpBoxDatabaseDetails.Size = new System.Drawing.Size(529, 522);
             this.grpBoxDatabaseDetails.TabIndex = 0;
             this.grpBoxDatabaseDetails.TabStop = false;
             this.grpBoxDatabaseDetails.Text = "Database Details";
@@ -783,7 +761,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label21.Location = new System.Drawing.Point(220, 375);
+            this.label21.Location = new System.Drawing.Point(217, 375);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(128, 29);
@@ -792,7 +770,7 @@
             // 
             // txtRoboostOrderTableName
             // 
-            this.txtRoboostOrderTableName.Location = new System.Drawing.Point(272, 320);
+            this.txtRoboostOrderTableName.Location = new System.Drawing.Point(269, 320);
             this.txtRoboostOrderTableName.Margin = new System.Windows.Forms.Padding(2);
             this.txtRoboostOrderTableName.Name = "txtRoboostOrderTableName";
             this.txtRoboostOrderTableName.Size = new System.Drawing.Size(232, 34);
@@ -800,7 +778,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(352, 373);
+            this.numericUpDown1.Location = new System.Drawing.Point(349, 373);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(64, 34);
@@ -810,7 +788,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label20.Location = new System.Drawing.Point(6, 323);
+            this.label20.Location = new System.Drawing.Point(15, 321);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(183, 29);
@@ -822,7 +800,7 @@
             this.UnitsComboBox.DisplayMember = "Name";
             this.UnitsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.UnitsComboBox.FormattingEnabled = true;
-            this.UnitsComboBox.Location = new System.Drawing.Point(420, 372);
+            this.UnitsComboBox.Location = new System.Drawing.Point(417, 372);
             this.UnitsComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.UnitsComboBox.Name = "UnitsComboBox";
             this.UnitsComboBox.Size = new System.Drawing.Size(84, 35);
@@ -834,7 +812,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label22.Location = new System.Drawing.Point(7, 375);
+            this.label22.Location = new System.Drawing.Point(16, 373);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(204, 29);
@@ -843,7 +821,7 @@
             // 
             // txtReviewsViewName
             // 
-            this.txtReviewsViewName.Location = new System.Drawing.Point(272, 276);
+            this.txtReviewsViewName.Location = new System.Drawing.Point(269, 276);
             this.txtReviewsViewName.Margin = new System.Windows.Forms.Padding(2);
             this.txtReviewsViewName.Name = "txtReviewsViewName";
             this.txtReviewsViewName.Size = new System.Drawing.Size(232, 34);
@@ -853,7 +831,7 @@
             // 
             this.lblReviewName.AutoSize = true;
             this.lblReviewName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblReviewName.Location = new System.Drawing.Point(6, 276);
+            this.lblReviewName.Location = new System.Drawing.Point(15, 274);
             this.lblReviewName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReviewName.Name = "lblReviewName";
             this.lblReviewName.Size = new System.Drawing.Size(196, 29);
@@ -862,7 +840,7 @@
             // 
             // txtNewOrdersViewName
             // 
-            this.txtNewOrdersViewName.Location = new System.Drawing.Point(272, 222);
+            this.txtNewOrdersViewName.Location = new System.Drawing.Point(269, 222);
             this.txtNewOrdersViewName.Margin = new System.Windows.Forms.Padding(2);
             this.txtNewOrdersViewName.Name = "txtNewOrdersViewName";
             this.txtNewOrdersViewName.Size = new System.Drawing.Size(232, 34);
@@ -872,7 +850,7 @@
             // 
             this.lblOrdersViewName.AutoSize = true;
             this.lblOrdersViewName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblOrdersViewName.Location = new System.Drawing.Point(6, 218);
+            this.lblOrdersViewName.Location = new System.Drawing.Point(15, 216);
             this.lblOrdersViewName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblOrdersViewName.Name = "lblOrdersViewName";
             this.lblOrdersViewName.Size = new System.Drawing.Size(176, 58);
@@ -882,7 +860,8 @@
             // btnSaveDatabaseDetails
             // 
             this.btnSaveDatabaseDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveDatabaseDetails.Location = new System.Drawing.Point(194, 442);
+            this.btnSaveDatabaseDetails.ForeColor = System.Drawing.Color.Maroon;
+            this.btnSaveDatabaseDetails.Location = new System.Drawing.Point(246, 437);
             this.btnSaveDatabaseDetails.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveDatabaseDetails.Name = "btnSaveDatabaseDetails";
             this.btnSaveDatabaseDetails.Size = new System.Drawing.Size(86, 37);
@@ -893,7 +872,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(272, 167);
+            this.txtPassword.Location = new System.Drawing.Point(269, 167);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(232, 34);
@@ -901,7 +880,7 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(272, 111);
+            this.txtUserName.Location = new System.Drawing.Point(269, 111);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(2);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(232, 34);
@@ -909,7 +888,7 @@
             // 
             // txtDatabaseName
             // 
-            this.txtDatabaseName.Location = new System.Drawing.Point(272, 71);
+            this.txtDatabaseName.Location = new System.Drawing.Point(269, 71);
             this.txtDatabaseName.Margin = new System.Windows.Forms.Padding(2);
             this.txtDatabaseName.Name = "txtDatabaseName";
             this.txtDatabaseName.Size = new System.Drawing.Size(232, 34);
@@ -917,7 +896,7 @@
             // 
             // txtServerIP
             // 
-            this.txtServerIP.Location = new System.Drawing.Point(272, 31);
+            this.txtServerIP.Location = new System.Drawing.Point(269, 31);
             this.txtServerIP.Margin = new System.Windows.Forms.Padding(2);
             this.txtServerIP.Name = "txtServerIP";
             this.txtServerIP.Size = new System.Drawing.Size(232, 34);
@@ -927,7 +906,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(12, 167);
+            this.label4.Location = new System.Drawing.Point(21, 165);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 29);
@@ -938,7 +917,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(7, 120);
+            this.label3.Location = new System.Drawing.Point(16, 118);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(118, 29);
@@ -949,7 +928,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(6, 71);
+            this.label2.Location = new System.Drawing.Point(15, 69);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 29);
@@ -960,7 +939,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(6, 33);
+            this.label1.Location = new System.Drawing.Point(15, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 29);
@@ -1366,7 +1345,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(30, 10);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1200, 800);
+            this.tabControl1.Size = new System.Drawing.Size(1263, 753);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 0;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged_1);
@@ -1394,11 +1373,115 @@
             this.dataGridViewLogger.TabIndex = 0;
             this.dataGridViewLogger.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewLogger_CellContentClick);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btnSaveDatabaseDetails);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtRoboostOrderTableName);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.UnitsComboBox);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.txtReviewsViewName);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtNewOrdersViewName);
+            this.panel1.Controls.Add(this.lblOrdersViewName);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.lblReviewName);
+            this.panel1.Controls.Add(this.txtUserName);
+            this.panel1.Controls.Add(this.txtServerIP);
+            this.panel1.Controls.Add(this.txtDatabaseName);
+            this.panel1.Location = new System.Drawing.Point(6, 45);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(523, 476);
+            this.panel1.TabIndex = 18;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.AutoScroll = true;
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.numericUpDown3);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.cmbPostOrderInterval);
+            this.panel2.Controls.Add(this.numericReviewsOrderInterval);
+            this.panel2.Controls.Add(this.numericPostOrderInterval);
+            this.panel2.Controls.Add(this.cmbPostReviewsInterval);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.btnSaveTimers);
+            this.panel2.Controls.Add(this.numericUpDown2);
+            this.panel2.Location = new System.Drawing.Point(5, 32);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(674, 192);
+            this.panel2.TabIndex = 18;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.btnSaveLogs);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.numericClearLogInterval);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.cmbClearLogInterval);
+            this.panel3.Controls.Add(this.txtLogFolderName);
+            this.panel3.Location = new System.Drawing.Point(14, 21);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(660, 111);
+            this.panel3.TabIndex = 15;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.btnSaveAPIDetails);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.txtToken);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.txtAPIURL);
+            this.panel4.Location = new System.Drawing.Point(14, 29);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(660, 105);
+            this.panel4.TabIndex = 10;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.AutoScroll = true;
+            this.panel5.AutoSize = true;
+            this.panel5.Controls.Add(this.label24);
+            this.panel5.Controls.Add(this.label23);
+            this.panel5.Controls.Add(this.btn_Stores_Save);
+            this.panel5.Controls.Add(this.textBoxStores);
+            this.panel5.Location = new System.Drawing.Point(26, 32);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(682, 186);
+            this.panel5.TabIndex = 11;
+            // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 800);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1263, 753);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -1415,7 +1498,6 @@
             this.grpBoxAllowedStores.ResumeLayout(false);
             this.grpBoxAllowedStores.PerformLayout();
             this.grpBoxLogDetails.ResumeLayout(false);
-            this.grpBoxLogDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericClearLogInterval)).EndInit();
             this.grpBoxDispatchOrders.ResumeLayout(false);
             this.grpBoxDispatchOrders.PerformLayout();
@@ -1424,9 +1506,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericPostOrderInterval)).EndInit();
             this.grpBoxAPIDetails.ResumeLayout(false);
-            this.grpBoxAPIDetails.PerformLayout();
             this.grpBoxDatabaseDetails.ResumeLayout(false);
-            this.grpBoxDatabaseDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPageOrderWithReviews.ResumeLayout(false);
             this.tabPageOrderWithReviews.PerformLayout();
@@ -1443,6 +1523,16 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPageLogs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLogger)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1552,6 +1642,11 @@
         private System.Windows.Forms.TextBox txtLastSuccessActionTime;
         private System.Windows.Forms.Label lbl_LastSuccessActionTime;
         private System.Windows.Forms.TextBox txtLastError;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
 
         //private System.Windows.Forms.Label label27;
         //private System.Windows.Forms.Label label26;
