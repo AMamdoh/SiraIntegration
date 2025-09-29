@@ -48,61 +48,66 @@
             this.btn_save_MaxHours = new System.Windows.Forms.Button();
             this.lblMaxHours = new System.Windows.Forms.Label();
             this.grpBoxAllowedStores = new System.Windows.Forms.GroupBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.btn_Stores_Save = new System.Windows.Forms.Button();
             this.textBoxStores = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
             this.grpBoxLogDetails = new System.Windows.Forms.GroupBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.numericClearLogInterval = new System.Windows.Forms.NumericUpDown();
-            this.cmbClearLogInterval = new System.Windows.Forms.ComboBox();
             this.btnSaveLogs = new System.Windows.Forms.Button();
-            this.txtLogFolderName = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.numericClearLogInterval = new System.Windows.Forms.NumericUpDown();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmbClearLogInterval = new System.Windows.Forms.ComboBox();
+            this.txtLogFolderName = new System.Windows.Forms.TextBox();
             this.grpBoxDispatchOrders = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericReviewsOrderInterval = new System.Windows.Forms.NumericUpDown();
-            this.cmbPostReviewsInterval = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.btnSaveTimers = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.numericPostOrderInterval = new System.Windows.Forms.NumericUpDown();
-            this.cmbPostOrderInterval = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbPostOrderInterval = new System.Windows.Forms.ComboBox();
+            this.numericReviewsOrderInterval = new System.Windows.Forms.NumericUpDown();
+            this.numericPostOrderInterval = new System.Windows.Forms.NumericUpDown();
+            this.cmbPostReviewsInterval = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnSaveTimers = new System.Windows.Forms.Button();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.grpBoxAPIDetails = new System.Windows.Forms.GroupBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.btnSaveAPIDetails = new System.Windows.Forms.Button();
-            this.txtToken = new System.Windows.Forms.TextBox();
-            this.txtAPIURL = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtToken = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtAPIURL = new System.Windows.Forms.TextBox();
             this.grpBoxDatabaseDetails = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSaveDatabaseDetails = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtRoboostOrderTableName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label20 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.UnitsComboBox = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.txtReviewsViewName = new System.Windows.Forms.TextBox();
-            this.lblReviewName = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.txtNewOrdersViewName = new System.Windows.Forms.TextBox();
             this.lblOrdersViewName = new System.Windows.Forms.Label();
-            this.btnSaveDatabaseDetails = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblReviewName = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtDatabaseName = new System.Windows.Forms.TextBox();
             this.txtServerIP = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.txtDatabaseName = new System.Windows.Forms.TextBox();
             this.tabPageOrderWithReviews = new System.Windows.Forms.TabPage();
             this.count_of_OrdersWithReviews = new System.Windows.Forms.Label();
-            this.lbl_count_orderswithreview = new System.Windows.Forms.Label();
+            this.lbl_countOfOrderswithreview = new System.Windows.Forms.Label();
             this.dataGridViewReviewsOrders = new System.Windows.Forms.DataGridView();
             this.panelUpdatedOrdersTop = new System.Windows.Forms.Panel();
             this.lblRefNumnerForUpdate = new System.Windows.Forms.Label();
@@ -113,8 +118,7 @@
             this.txtRefNumberForUpdate = new System.Windows.Forms.TextBox();
             this.comboBoxFiterReviews = new System.Windows.Forms.ComboBox();
             this.tabPagePostedOrders = new System.Windows.Forms.TabPage();
-            this.count_orders = new System.Windows.Forms.Label();
-            this.lblTotalOrders = new System.Windows.Forms.Label();
+            this.countOfOrders = new System.Windows.Forms.Label();
             this.dataGridViewPostedOrders = new System.Windows.Forms.DataGridView();
             this.panelPostedOrdersTop = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
@@ -124,34 +128,36 @@
             this.lblOrderStatusFilter = new System.Windows.Forms.Label();
             this.comboBoxFilter = new System.Windows.Forms.ComboBox();
             this.tabPageSummary = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
             this.txtLastError = new System.Windows.Forms.TextBox();
             this.txtLastSuccessActionTime = new System.Windows.Forms.TextBox();
             this.lbl_LastSuccessActionTime = new System.Windows.Forms.Label();
             this.lbTextOfStatus = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageLogs = new System.Windows.Forms.TabPage();
             this.dataGridViewLogger = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.countOfOrders = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCanceledOrders)).BeginInit();
             this.tabPageSettings.SuspendLayout();
             this.gpBoxMaxHoursToSend.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpForHours)).BeginInit();
             this.grpBoxAllowedStores.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.grpBoxLogDetails.SuspendLayout();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericClearLogInterval)).BeginInit();
             this.grpBoxDispatchOrders.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericReviewsOrderInterval)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericPostOrderInterval)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.grpBoxAPIDetails.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.grpBoxDatabaseDetails.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabPageOrderWithReviews.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReviewsOrders)).BeginInit();
@@ -163,11 +169,6 @@
             this.tabControl1.SuspendLayout();
             this.tabPageLogs.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLogger)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // count_of_canceled_orders
@@ -372,6 +373,33 @@
             this.grpBoxAllowedStores.TabStop = false;
             this.grpBoxAllowedStores.Text = "Allowed stores";
             // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.AutoScroll = true;
+            this.panel5.AutoSize = true;
+            this.panel5.Controls.Add(this.label24);
+            this.panel5.Controls.Add(this.label23);
+            this.panel5.Controls.Add(this.btn_Stores_Save);
+            this.panel5.Controls.Add(this.textBoxStores);
+            this.panel5.Location = new System.Drawing.Point(26, 32);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(682, 186);
+            this.panel5.TabIndex = 11;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label24.Location = new System.Drawing.Point(2, 34);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(149, 29);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Stores codes :";
+            // 
             // label23
             // 
             this.label23.AutoSize = true;
@@ -408,17 +436,6 @@
             this.textBoxStores.Size = new System.Drawing.Size(240, 100);
             this.textBoxStores.TabIndex = 5;
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label24.Location = new System.Drawing.Point(2, 34);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(149, 29);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Stores codes :";
-            // 
             // grpBoxLogDetails
             // 
             this.grpBoxLogDetails.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -435,6 +452,24 @@
             this.grpBoxLogDetails.TabStop = false;
             this.grpBoxLogDetails.Text = "Log Details";
             // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.btnSaveLogs);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.numericClearLogInterval);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.cmbClearLogInterval);
+            this.panel3.Controls.Add(this.txtLogFolderName);
+            this.panel3.Location = new System.Drawing.Point(14, 21);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(660, 111);
+            this.panel3.TabIndex = 15;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -446,26 +481,6 @@
             this.label15.Size = new System.Drawing.Size(128, 29);
             this.label15.TabIndex = 14;
             this.label15.Text = "Occurs every";
-            // 
-            // numericClearLogInterval
-            // 
-            this.numericClearLogInterval.Location = new System.Drawing.Point(251, 76);
-            this.numericClearLogInterval.Margin = new System.Windows.Forms.Padding(2);
-            this.numericClearLogInterval.Name = "numericClearLogInterval";
-            this.numericClearLogInterval.Size = new System.Drawing.Size(58, 34);
-            this.numericClearLogInterval.TabIndex = 13;
-            // 
-            // cmbClearLogInterval
-            // 
-            this.cmbClearLogInterval.DisplayMember = "Name";
-            this.cmbClearLogInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbClearLogInterval.FormattingEnabled = true;
-            this.cmbClearLogInterval.Location = new System.Drawing.Point(337, 75);
-            this.cmbClearLogInterval.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbClearLogInterval.Name = "cmbClearLogInterval";
-            this.cmbClearLogInterval.Size = new System.Drawing.Size(134, 35);
-            this.cmbClearLogInterval.TabIndex = 12;
-            this.cmbClearLogInterval.ValueMember = "ID";
             // 
             // btnSaveLogs
             // 
@@ -480,13 +495,24 @@
             this.btnSaveLogs.UseVisualStyleBackColor = true;
             this.btnSaveLogs.Click += new System.EventHandler(this.btnSaveLogs_Click);
             // 
-            // txtLogFolderName
+            // label14
             // 
-            this.txtLogFolderName.Location = new System.Drawing.Point(144, 23);
-            this.txtLogFolderName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtLogFolderName.Name = "txtLogFolderName";
-            this.txtLogFolderName.Size = new System.Drawing.Size(261, 34);
-            this.txtLogFolderName.TabIndex = 5;
+            this.label14.AutoSize = true;
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label14.Location = new System.Drawing.Point(2, 26);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(116, 29);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Log folder:";
+            // 
+            // numericClearLogInterval
+            // 
+            this.numericClearLogInterval.Location = new System.Drawing.Point(251, 76);
+            this.numericClearLogInterval.Margin = new System.Windows.Forms.Padding(2);
+            this.numericClearLogInterval.Name = "numericClearLogInterval";
+            this.numericClearLogInterval.Size = new System.Drawing.Size(58, 34);
+            this.numericClearLogInterval.TabIndex = 13;
             // 
             // label13
             // 
@@ -499,16 +525,25 @@
             this.label13.TabIndex = 1;
             this.label13.Text = "Clear Log:";
             // 
-            // label14
+            // cmbClearLogInterval
             // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label14.Location = new System.Drawing.Point(2, 26);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(116, 29);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Log folder:";
+            this.cmbClearLogInterval.DisplayMember = "Name";
+            this.cmbClearLogInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbClearLogInterval.FormattingEnabled = true;
+            this.cmbClearLogInterval.Location = new System.Drawing.Point(337, 75);
+            this.cmbClearLogInterval.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbClearLogInterval.Name = "cmbClearLogInterval";
+            this.cmbClearLogInterval.Size = new System.Drawing.Size(134, 35);
+            this.cmbClearLogInterval.TabIndex = 12;
+            this.cmbClearLogInterval.ValueMember = "ID";
+            // 
+            // txtLogFolderName
+            // 
+            this.txtLogFolderName.Location = new System.Drawing.Point(144, 23);
+            this.txtLogFolderName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLogFolderName.Name = "txtLogFolderName";
+            this.txtLogFolderName.Size = new System.Drawing.Size(261, 34);
+            this.txtLogFolderName.TabIndex = 5;
             // 
             // grpBoxDispatchOrders
             // 
@@ -527,6 +562,31 @@
             this.grpBoxDispatchOrders.Text = "Dispatch Orders";
             this.grpBoxDispatchOrders.Enter += new System.EventHandler(this.grpBoxDispatchOrders_Enter);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.AutoScroll = true;
+            this.panel2.AutoSize = true;
+            this.panel2.Controls.Add(this.numericUpDown3);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.cmbPostOrderInterval);
+            this.panel2.Controls.Add(this.numericReviewsOrderInterval);
+            this.panel2.Controls.Add(this.numericPostOrderInterval);
+            this.panel2.Controls.Add(this.cmbPostReviewsInterval);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.btnSaveTimers);
+            this.panel2.Controls.Add(this.numericUpDown2);
+            this.panel2.Location = new System.Drawing.Point(5, 32);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(674, 192);
+            this.panel2.TabIndex = 18;
+            // 
             // numericUpDown3
             // 
             this.numericUpDown3.Location = new System.Drawing.Point(349, 50);
@@ -534,82 +594,6 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(58, 34);
             this.numericUpDown3.TabIndex = 19;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(22, 52);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(284, 29);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Number of Reviews to Fetch:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(186, 158);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 24);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Occurs every";
-            // 
-            // numericReviewsOrderInterval
-            // 
-            this.numericReviewsOrderInterval.Location = new System.Drawing.Point(346, 156);
-            this.numericReviewsOrderInterval.Margin = new System.Windows.Forms.Padding(2);
-            this.numericReviewsOrderInterval.Name = "numericReviewsOrderInterval";
-            this.numericReviewsOrderInterval.Size = new System.Drawing.Size(58, 34);
-            this.numericReviewsOrderInterval.TabIndex = 16;
-            // 
-            // cmbPostReviewsInterval
-            // 
-            this.cmbPostReviewsInterval.DisplayMember = "Name";
-            this.cmbPostReviewsInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbPostReviewsInterval.FormattingEnabled = true;
-            this.cmbPostReviewsInterval.Location = new System.Drawing.Point(453, 150);
-            this.cmbPostReviewsInterval.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbPostReviewsInterval.Name = "cmbPostReviewsInterval";
-            this.cmbPostReviewsInterval.Size = new System.Drawing.Size(116, 35);
-            this.cmbPostReviewsInterval.TabIndex = 15;
-            this.cmbPostReviewsInterval.ValueMember = "ID";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(22, 156);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(146, 29);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "Post Reviews:";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(346, 8);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(58, 34);
-            this.numericUpDown2.TabIndex = 13;
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
-            // 
-            // btnSaveTimers
-            // 
-            this.btnSaveTimers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSaveTimers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveTimers.Location = new System.Drawing.Point(558, 70);
-            this.btnSaveTimers.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSaveTimers.Name = "btnSaveTimers";
-            this.btnSaveTimers.Size = new System.Drawing.Size(97, 45);
-            this.btnSaveTimers.TabIndex = 10;
-            this.btnSaveTimers.Text = "Save";
-            this.btnSaveTimers.UseVisualStyleBackColor = true;
-            this.btnSaveTimers.Click += new System.EventHandler(this.btnSaveTimers_Click);
             // 
             // label16
             // 
@@ -622,25 +606,39 @@
             this.label16.TabIndex = 12;
             this.label16.Text = "Number of Orders to Fetch:";
             // 
-            // label10
+            // label11
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(172, 111);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 24);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Occurs every";
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label11.Location = new System.Drawing.Point(22, 52);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(284, 29);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Number of Reviews to Fetch:";
             // 
-            // numericPostOrderInterval
+            // label6
             // 
-            this.numericPostOrderInterval.Location = new System.Drawing.Point(319, 111);
-            this.numericPostOrderInterval.Margin = new System.Windows.Forms.Padding(2);
-            this.numericPostOrderInterval.Name = "numericPostOrderInterval";
-            this.numericPostOrderInterval.Size = new System.Drawing.Size(58, 34);
-            this.numericPostOrderInterval.TabIndex = 4;
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(22, 109);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(133, 29);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Post Orders:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(186, 158);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 24);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Occurs every";
             // 
             // cmbPostOrderInterval
             // 
@@ -655,16 +653,78 @@
             this.cmbPostOrderInterval.ValueMember = "ID";
             this.cmbPostOrderInterval.SelectedIndexChanged += new System.EventHandler(this.cmbPostOrderInterval_SelectedIndexChanged);
             // 
-            // label6
+            // numericReviewsOrderInterval
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(22, 109);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 29);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Post Orders:";
+            this.numericReviewsOrderInterval.Location = new System.Drawing.Point(346, 156);
+            this.numericReviewsOrderInterval.Margin = new System.Windows.Forms.Padding(2);
+            this.numericReviewsOrderInterval.Name = "numericReviewsOrderInterval";
+            this.numericReviewsOrderInterval.Size = new System.Drawing.Size(58, 34);
+            this.numericReviewsOrderInterval.TabIndex = 16;
+            // 
+            // numericPostOrderInterval
+            // 
+            this.numericPostOrderInterval.Location = new System.Drawing.Point(319, 111);
+            this.numericPostOrderInterval.Margin = new System.Windows.Forms.Padding(2);
+            this.numericPostOrderInterval.Name = "numericPostOrderInterval";
+            this.numericPostOrderInterval.Size = new System.Drawing.Size(58, 34);
+            this.numericPostOrderInterval.TabIndex = 4;
+            // 
+            // cmbPostReviewsInterval
+            // 
+            this.cmbPostReviewsInterval.DisplayMember = "Name";
+            this.cmbPostReviewsInterval.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbPostReviewsInterval.FormattingEnabled = true;
+            this.cmbPostReviewsInterval.Location = new System.Drawing.Point(453, 150);
+            this.cmbPostReviewsInterval.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbPostReviewsInterval.Name = "cmbPostReviewsInterval";
+            this.cmbPostReviewsInterval.Size = new System.Drawing.Size(116, 35);
+            this.cmbPostReviewsInterval.TabIndex = 15;
+            this.cmbPostReviewsInterval.ValueMember = "ID";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label10.Location = new System.Drawing.Point(172, 111);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 24);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Occurs every";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label9.Location = new System.Drawing.Point(22, 156);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(146, 29);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Post Reviews:";
+            // 
+            // btnSaveTimers
+            // 
+            this.btnSaveTimers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSaveTimers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveTimers.Location = new System.Drawing.Point(558, 70);
+            this.btnSaveTimers.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaveTimers.Name = "btnSaveTimers";
+            this.btnSaveTimers.Size = new System.Drawing.Size(97, 45);
+            this.btnSaveTimers.TabIndex = 10;
+            this.btnSaveTimers.Text = "Save";
+            this.btnSaveTimers.UseVisualStyleBackColor = true;
+            this.btnSaveTimers.Click += new System.EventHandler(this.btnSaveTimers_Click);
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(346, 8);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(58, 34);
+            this.numericUpDown2.TabIndex = 13;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // grpBoxAPIDetails
             // 
@@ -684,6 +744,22 @@
             this.grpBoxAPIDetails.Text = "API Details";
             this.grpBoxAPIDetails.Enter += new System.EventHandler(this.grpBoxAPIDetails_Enter);
             // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.AutoScroll = true;
+            this.panel4.Controls.Add(this.btnSaveAPIDetails);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.txtToken);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.txtAPIURL);
+            this.panel4.Location = new System.Drawing.Point(14, 29);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(660, 105);
+            this.panel4.TabIndex = 10;
+            // 
             // btnSaveAPIDetails
             // 
             this.btnSaveAPIDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -697,6 +773,17 @@
             this.btnSaveAPIDetails.UseVisualStyleBackColor = true;
             this.btnSaveAPIDetails.Click += new System.EventHandler(this.btnSaveAPIDetails_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label8.Location = new System.Drawing.Point(9, 25);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(97, 29);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "API URL:";
+            // 
             // txtToken
             // 
             this.txtToken.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -706,16 +793,6 @@
             this.txtToken.Name = "txtToken";
             this.txtToken.Size = new System.Drawing.Size(297, 34);
             this.txtToken.TabIndex = 6;
-            // 
-            // txtAPIURL
-            // 
-            this.txtAPIURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAPIURL.Location = new System.Drawing.Point(132, 22);
-            this.txtAPIURL.Margin = new System.Windows.Forms.Padding(2);
-            this.txtAPIURL.Name = "txtAPIURL";
-            this.txtAPIURL.Size = new System.Drawing.Size(297, 34);
-            this.txtAPIURL.TabIndex = 5;
             // 
             // label7
             // 
@@ -728,16 +805,15 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Token:";
             // 
-            // label8
+            // txtAPIURL
             // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(9, 25);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(97, 29);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "API URL:";
+            this.txtAPIURL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAPIURL.Location = new System.Drawing.Point(132, 22);
+            this.txtAPIURL.Margin = new System.Windows.Forms.Padding(2);
+            this.txtAPIURL.Name = "txtAPIURL";
+            this.txtAPIURL.Size = new System.Drawing.Size(297, 34);
+            this.txtAPIURL.TabIndex = 5;
             // 
             // grpBoxDatabaseDetails
             // 
@@ -756,6 +832,48 @@
             this.grpBoxDatabaseDetails.Text = "Database Details";
             this.grpBoxDatabaseDetails.Enter += new System.EventHandler(this.grpBoxDatabaseDetails_Enter);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btnSaveDatabaseDetails);
+            this.panel1.Controls.Add(this.label21);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtRoboostOrderTableName);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.UnitsComboBox);
+            this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.txtReviewsViewName);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.txtNewOrdersViewName);
+            this.panel1.Controls.Add(this.lblOrdersViewName);
+            this.panel1.Controls.Add(this.label22);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.lblReviewName);
+            this.panel1.Controls.Add(this.txtUserName);
+            this.panel1.Controls.Add(this.txtServerIP);
+            this.panel1.Controls.Add(this.txtDatabaseName);
+            this.panel1.Location = new System.Drawing.Point(6, 45);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(523, 476);
+            this.panel1.TabIndex = 18;
+            // 
+            // btnSaveDatabaseDetails
+            // 
+            this.btnSaveDatabaseDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveDatabaseDetails.ForeColor = System.Drawing.Color.Maroon;
+            this.btnSaveDatabaseDetails.Location = new System.Drawing.Point(246, 437);
+            this.btnSaveDatabaseDetails.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSaveDatabaseDetails.Name = "btnSaveDatabaseDetails";
+            this.btnSaveDatabaseDetails.Size = new System.Drawing.Size(86, 37);
+            this.btnSaveDatabaseDetails.TabIndex = 8;
+            this.btnSaveDatabaseDetails.Text = "Save";
+            this.btnSaveDatabaseDetails.UseVisualStyleBackColor = true;
+            this.btnSaveDatabaseDetails.Click += new System.EventHandler(this.btnSaveDatabaseDetails_Click);
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -768,6 +886,17 @@
             this.label21.TabIndex = 17;
             this.label21.Text = "Occurs every";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(15, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Server IP:";
+            // 
             // txtRoboostOrderTableName
             // 
             this.txtRoboostOrderTableName.Location = new System.Drawing.Point(269, 320);
@@ -775,6 +904,17 @@
             this.txtRoboostOrderTableName.Name = "txtRoboostOrderTableName";
             this.txtRoboostOrderTableName.Size = new System.Drawing.Size(232, 34);
             this.txtRoboostOrderTableName.TabIndex = 16;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(15, 69);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(167, 29);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Database Name:";
             // 
             // numericUpDown1
             // 
@@ -784,16 +924,16 @@
             this.numericUpDown1.Size = new System.Drawing.Size(64, 34);
             this.numericUpDown1.TabIndex = 16;
             // 
-            // label20
+            // label3
             // 
-            this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label20.Location = new System.Drawing.Point(15, 321);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(183, 29);
-            this.label20.TabIndex = 15;
-            this.label20.Text = "Sira Orders Table:";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(16, 118);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(118, 29);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "UserName:";
             // 
             // UnitsComboBox
             // 
@@ -808,16 +948,16 @@
             this.UnitsComboBox.ValueMember = "ID";
             this.UnitsComboBox.SelectedIndexChanged += new System.EventHandler(this.UnitsComboBox_SelectedIndexChanged);
             // 
-            // label22
+            // label20
             // 
-            this.label22.AutoSize = true;
-            this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label22.Location = new System.Drawing.Point(16, 373);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(204, 29);
-            this.label22.TabIndex = 14;
-            this.label22.Text = "Remove Old Orders:";
+            this.label20.AutoSize = true;
+            this.label20.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label20.Location = new System.Drawing.Point(15, 321);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(183, 29);
+            this.label20.TabIndex = 15;
+            this.label20.Text = "Sira Orders Table:";
             // 
             // txtReviewsViewName
             // 
@@ -827,16 +967,16 @@
             this.txtReviewsViewName.Size = new System.Drawing.Size(232, 34);
             this.txtReviewsViewName.TabIndex = 12;
             // 
-            // lblReviewName
+            // label4
             // 
-            this.lblReviewName.AutoSize = true;
-            this.lblReviewName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblReviewName.Location = new System.Drawing.Point(15, 274);
-            this.lblReviewName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblReviewName.Name = "lblReviewName";
-            this.lblReviewName.Size = new System.Drawing.Size(196, 29);
-            this.lblReviewName.TabIndex = 11;
-            this.lblReviewName.Text = "ReviewsViewName:";
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(21, 165);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 29);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Password:";
             // 
             // txtNewOrdersViewName
             // 
@@ -857,18 +997,16 @@
             this.lblOrdersViewName.TabIndex = 9;
             this.lblOrdersViewName.Text = "OrdersViewName\n\n";
             // 
-            // btnSaveDatabaseDetails
+            // label22
             // 
-            this.btnSaveDatabaseDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveDatabaseDetails.ForeColor = System.Drawing.Color.Maroon;
-            this.btnSaveDatabaseDetails.Location = new System.Drawing.Point(246, 437);
-            this.btnSaveDatabaseDetails.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSaveDatabaseDetails.Name = "btnSaveDatabaseDetails";
-            this.btnSaveDatabaseDetails.Size = new System.Drawing.Size(86, 37);
-            this.btnSaveDatabaseDetails.TabIndex = 8;
-            this.btnSaveDatabaseDetails.Text = "Save";
-            this.btnSaveDatabaseDetails.UseVisualStyleBackColor = true;
-            this.btnSaveDatabaseDetails.Click += new System.EventHandler(this.btnSaveDatabaseDetails_Click);
+            this.label22.AutoSize = true;
+            this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label22.Location = new System.Drawing.Point(16, 373);
+            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(204, 29);
+            this.label22.TabIndex = 14;
+            this.label22.Text = "Remove Old Orders:";
             // 
             // txtPassword
             // 
@@ -878,6 +1016,17 @@
             this.txtPassword.Size = new System.Drawing.Size(232, 34);
             this.txtPassword.TabIndex = 7;
             // 
+            // lblReviewName
+            // 
+            this.lblReviewName.AutoSize = true;
+            this.lblReviewName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblReviewName.Location = new System.Drawing.Point(15, 274);
+            this.lblReviewName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblReviewName.Name = "lblReviewName";
+            this.lblReviewName.Size = new System.Drawing.Size(196, 29);
+            this.lblReviewName.TabIndex = 11;
+            this.lblReviewName.Text = "ReviewsViewName:";
+            // 
             // txtUserName
             // 
             this.txtUserName.Location = new System.Drawing.Point(269, 111);
@@ -885,14 +1034,6 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(232, 34);
             this.txtUserName.TabIndex = 6;
-            // 
-            // txtDatabaseName
-            // 
-            this.txtDatabaseName.Location = new System.Drawing.Point(269, 71);
-            this.txtDatabaseName.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDatabaseName.Name = "txtDatabaseName";
-            this.txtDatabaseName.Size = new System.Drawing.Size(232, 34);
-            this.txtDatabaseName.TabIndex = 5;
             // 
             // txtServerIP
             // 
@@ -902,60 +1043,24 @@
             this.txtServerIP.Size = new System.Drawing.Size(232, 34);
             this.txtServerIP.TabIndex = 4;
             // 
-            // label4
+            // txtDatabaseName
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(21, 165);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 29);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Password:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(16, 118);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "UserName:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(15, 69);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Database Name:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(15, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Server IP:";
+            this.txtDatabaseName.Location = new System.Drawing.Point(269, 71);
+            this.txtDatabaseName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDatabaseName.Name = "txtDatabaseName";
+            this.txtDatabaseName.Size = new System.Drawing.Size(232, 34);
+            this.txtDatabaseName.TabIndex = 5;
             // 
             // tabPageOrderWithReviews
             // 
             this.tabPageOrderWithReviews.Controls.Add(this.count_of_OrdersWithReviews);
-            this.tabPageOrderWithReviews.Controls.Add(this.lbl_count_orderswithreview);
+            this.tabPageOrderWithReviews.Controls.Add(this.lbl_countOfOrderswithreview);
             this.tabPageOrderWithReviews.Controls.Add(this.dataGridViewReviewsOrders);
             this.tabPageOrderWithReviews.Controls.Add(this.panelUpdatedOrdersTop);
             this.tabPageOrderWithReviews.Location = new System.Drawing.Point(4, 44);
             this.tabPageOrderWithReviews.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageOrderWithReviews.Name = "tabPageOrderWithReviews";
-            this.tabPageOrderWithReviews.Size = new System.Drawing.Size(1192, 752);
+            this.tabPageOrderWithReviews.Size = new System.Drawing.Size(1255, 705);
             this.tabPageOrderWithReviews.TabIndex = 2;
             this.tabPageOrderWithReviews.Text = "Orders With Reviews";
             this.tabPageOrderWithReviews.UseVisualStyleBackColor = true;
@@ -965,24 +1070,25 @@
             this.count_of_OrdersWithReviews.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.count_of_OrdersWithReviews.AutoSize = true;
             this.count_of_OrdersWithReviews.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.count_of_OrdersWithReviews.Location = new System.Drawing.Point(553, 540);
+            this.count_of_OrdersWithReviews.Location = new System.Drawing.Point(567, 540);
             this.count_of_OrdersWithReviews.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.count_of_OrdersWithReviews.Name = "count_of_OrdersWithReviews";
             this.count_of_OrdersWithReviews.Size = new System.Drawing.Size(24, 25);
             this.count_of_OrdersWithReviews.TabIndex = 12;
             this.count_of_OrdersWithReviews.Text = "0";
             // 
-            // lbl_count_orderswithreview
+            // lbl_countOfOrderswithreview
             // 
-            this.lbl_count_orderswithreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbl_count_orderswithreview.AutoSize = true;
-            this.lbl_count_orderswithreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_count_orderswithreview.Location = new System.Drawing.Point(400, 540);
-            this.lbl_count_orderswithreview.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_count_orderswithreview.Name = "lbl_count_orderswithreview";
-            this.lbl_count_orderswithreview.Size = new System.Drawing.Size(133, 25);
-            this.lbl_count_orderswithreview.TabIndex = 11;
-            this.lbl_count_orderswithreview.Text = "Total Orders";
+            this.lbl_countOfOrderswithreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbl_countOfOrderswithreview.AutoSize = true;
+            this.lbl_countOfOrderswithreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_countOfOrderswithreview.Location = new System.Drawing.Point(412, 540);
+            this.lbl_countOfOrderswithreview.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_countOfOrderswithreview.Name = "lbl_countOfOrderswithreview";
+            this.lbl_countOfOrderswithreview.Size = new System.Drawing.Size(133, 25);
+            this.lbl_countOfOrderswithreview.TabIndex = 11;
+            this.lbl_countOfOrderswithreview.Text = "Total Orders";
+            this.lbl_countOfOrderswithreview.Click += new System.EventHandler(this.lbl_countOfOrderswithreview_Click);
             // 
             // dataGridViewReviewsOrders
             // 
@@ -993,7 +1099,7 @@
             this.dataGridViewReviewsOrders.Name = "dataGridViewReviewsOrders";
             this.dataGridViewReviewsOrders.RowHeadersWidth = 51;
             this.dataGridViewReviewsOrders.RowTemplate.Height = 24;
-            this.dataGridViewReviewsOrders.Size = new System.Drawing.Size(1188, 638);
+            this.dataGridViewReviewsOrders.Size = new System.Drawing.Size(1251, 638);
             this.dataGridViewReviewsOrders.TabIndex = 4;
             this.dataGridViewReviewsOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewReviewsOrders_CellContentClick);
             // 
@@ -1010,7 +1116,7 @@
             this.panelUpdatedOrdersTop.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelUpdatedOrdersTop.Location = new System.Drawing.Point(0, 0);
             this.panelUpdatedOrdersTop.Name = "panelUpdatedOrdersTop";
-            this.panelUpdatedOrdersTop.Size = new System.Drawing.Size(1192, 80);
+            this.panelUpdatedOrdersTop.Size = new System.Drawing.Size(1255, 80);
             this.panelUpdatedOrdersTop.TabIndex = 11;
             // 
             // lblRefNumnerForUpdate
@@ -1032,7 +1138,7 @@
             this.btn_clear_updatedorder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_clear_updatedorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_clear_updatedorder.ForeColor = System.Drawing.Color.White;
-            this.btn_clear_updatedorder.Location = new System.Drawing.Point(1000, 20);
+            this.btn_clear_updatedorder.Location = new System.Drawing.Point(1063, 20);
             this.btn_clear_updatedorder.Margin = new System.Windows.Forms.Padding(2);
             this.btn_clear_updatedorder.Name = "btn_clear_updatedorder";
             this.btn_clear_updatedorder.Size = new System.Drawing.Size(115, 36);
@@ -1048,7 +1154,7 @@
             this.btnSearchUpdatedOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchUpdatedOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchUpdatedOrder.ForeColor = System.Drawing.Color.White;
-            this.btnSearchUpdatedOrder.Location = new System.Drawing.Point(870, 20);
+            this.btnSearchUpdatedOrder.Location = new System.Drawing.Point(933, 20);
             this.btnSearchUpdatedOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearchUpdatedOrder.Name = "btnSearchUpdatedOrder";
             this.btnSearchUpdatedOrder.Size = new System.Drawing.Size(112, 36);
@@ -1103,8 +1209,9 @@
             // 
             // tabPagePostedOrders
             // 
-            this.tabPagePostedOrders.Controls.Add(this.count_orders);
-            this.tabPagePostedOrders.Controls.Add(this.lblTotalOrders);
+            this.tabPagePostedOrders.Controls.Add(this.countOfOrders);
+            this.tabPagePostedOrders.Controls.Add(this.label17);
+            this.tabPagePostedOrders.Controls.Add(this.countOfOrders);
             this.tabPagePostedOrders.Controls.Add(this.dataGridViewPostedOrders);
             this.tabPagePostedOrders.Controls.Add(this.panelPostedOrdersTop);
             this.tabPagePostedOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1112,36 +1219,18 @@
             this.tabPagePostedOrders.Margin = new System.Windows.Forms.Padding(2);
             this.tabPagePostedOrders.Name = "tabPagePostedOrders";
             this.tabPagePostedOrders.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPagePostedOrders.Size = new System.Drawing.Size(1192, 752);
+            this.tabPagePostedOrders.Size = new System.Drawing.Size(1255, 705);
             this.tabPagePostedOrders.TabIndex = 1;
             this.tabPagePostedOrders.Text = "Posted Orders only";
             this.tabPagePostedOrders.UseVisualStyleBackColor = true;
             this.tabPagePostedOrders.Click += new System.EventHandler(this.tabPagePostedOrders_Click);
             // 
-            // count_orders
-            // 
-            this.count_orders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.count_orders.AutoSize = true;
-            this.count_orders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.count_orders.Location = new System.Drawing.Point(662, 727);
-            this.count_orders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.count_orders.Name = "count_orders";
-            this.count_orders.Size = new System.Drawing.Size(24, 25);
-            this.count_orders.TabIndex = 5;
-            this.count_orders.Text = "0";
-            this.count_orders.Click += new System.EventHandler(this.count_orders_Click);
+            // countOfOrders
+        
             // 
             // lblTotalOrders
             // 
-            this.lblTotalOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblTotalOrders.AutoSize = true;
-            this.lblTotalOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalOrders.Location = new System.Drawing.Point(551, 727);
-            this.lblTotalOrders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalOrders.Name = "lblTotalOrders";
-            this.lblTotalOrders.Size = new System.Drawing.Size(133, 25);
-            this.lblTotalOrders.TabIndex = 3;
-            this.lblTotalOrders.Text = "Total Orders";
+         
             // 
             // dataGridViewPostedOrders
             // 
@@ -1152,12 +1241,12 @@
             this.dataGridViewPostedOrders.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
             this.dataGridViewPostedOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPostedOrders.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridViewPostedOrders.Location = new System.Drawing.Point(2, 82);
+            this.dataGridViewPostedOrders.Location = new System.Drawing.Point(4, 87);
             this.dataGridViewPostedOrders.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewPostedOrders.Name = "dataGridViewPostedOrders";
             this.dataGridViewPostedOrders.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewPostedOrders.RowTemplate.Height = 24;
-            this.dataGridViewPostedOrders.Size = new System.Drawing.Size(1188, 638);
+            this.dataGridViewPostedOrders.Size = new System.Drawing.Size(1251, 553);
             this.dataGridViewPostedOrders.TabIndex = 0;
             // 
             // panelPostedOrdersTop
@@ -1172,7 +1261,7 @@
             this.panelPostedOrdersTop.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelPostedOrdersTop.Location = new System.Drawing.Point(2, 2);
             this.panelPostedOrdersTop.Name = "panelPostedOrdersTop";
-            this.panelPostedOrdersTop.Size = new System.Drawing.Size(1188, 80);
+            this.panelPostedOrdersTop.Size = new System.Drawing.Size(1251, 80);
             this.panelPostedOrdersTop.TabIndex = 10;
             this.panelPostedOrdersTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPostedOrdersTop_Paint);
             // 
@@ -1183,10 +1272,10 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(1051, 21);
+            this.btnClear.Location = new System.Drawing.Point(1114, 21);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(86, 41);
+            this.btnClear.Size = new System.Drawing.Size(104, 41);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -1199,7 +1288,7 @@
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(913, 21);
+            this.btnSearch.Location = new System.Drawing.Point(976, 21);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(117, 41);
@@ -1250,29 +1339,43 @@
             // 
             // tabPageSummary
             // 
+            this.tabPageSummary.Controls.Add(this.label12);
             this.tabPageSummary.Controls.Add(this.txtLastError);
             this.tabPageSummary.Controls.Add(this.txtLastSuccessActionTime);
             this.tabPageSummary.Controls.Add(this.lbl_LastSuccessActionTime);
             this.tabPageSummary.Controls.Add(this.lbTextOfStatus);
             this.tabPageSummary.Controls.Add(this.lblStatus);
-            this.tabPageSummary.Controls.Add(this.label27);
             this.tabPageSummary.Location = new System.Drawing.Point(4, 44);
             this.tabPageSummary.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageSummary.Name = "tabPageSummary";
             this.tabPageSummary.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPageSummary.Size = new System.Drawing.Size(1192, 752);
+            this.tabPageSummary.Size = new System.Drawing.Size(1255, 705);
             this.tabPageSummary.TabIndex = 0;
             this.tabPageSummary.Text = "Summary";
             this.tabPageSummary.UseVisualStyleBackColor = true;
             this.tabPageSummary.Click += new System.EventHandler(this.tabPageSummary_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(46, 226);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(156, 37);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Last Error:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // txtLastError
             // 
-            this.txtLastError.Location = new System.Drawing.Point(406, 140);
+            this.txtLastError.Location = new System.Drawing.Point(406, 180);
             this.txtLastError.Multiline = true;
             this.txtLastError.Name = "txtLastError";
             this.txtLastError.Size = new System.Drawing.Size(299, 101);
             this.txtLastError.TabIndex = 6;
+            this.txtLastError.TextChanged += new System.EventHandler(this.txtLastError_TextChanged);
             // 
             // txtLastSuccessActionTime
             // 
@@ -1281,14 +1384,16 @@
             this.txtLastSuccessActionTime.Name = "txtLastSuccessActionTime";
             this.txtLastSuccessActionTime.Size = new System.Drawing.Size(299, 101);
             this.txtLastSuccessActionTime.TabIndex = 5;
+            this.txtLastSuccessActionTime.TextChanged += new System.EventHandler(this.txtLastSuccessActionTime_TextChanged);
             // 
             // lbl_LastSuccessActionTime
             // 
             this.lbl_LastSuccessActionTime.AutoSize = true;
-            this.lbl_LastSuccessActionTime.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_LastSuccessActionTime.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_LastSuccessActionTime.ForeColor = System.Drawing.Color.LimeGreen;
             this.lbl_LastSuccessActionTime.Location = new System.Drawing.Point(47, 412);
             this.lbl_LastSuccessActionTime.Name = "lbl_LastSuccessActionTime";
-            this.lbl_LastSuccessActionTime.Size = new System.Drawing.Size(262, 31);
+            this.lbl_LastSuccessActionTime.Size = new System.Drawing.Size(318, 38);
             this.lbl_LastSuccessActionTime.TabIndex = 7;
             this.lbl_LastSuccessActionTime.Text = "LastSuccessActionTime";
             // 
@@ -1305,29 +1410,15 @@
             // 
             // lblStatus
             // 
-            this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(29, 34);
+            this.lblStatus.Location = new System.Drawing.Point(46, 35);
             this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(116, 37);
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "Status :";
             this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
-            // 
-            // label27
-            // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Segoe UI Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(46, 165);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(156, 37);
-            this.label27.TabIndex = 3;
-            this.label27.Text = "Last Error:";
             // 
             // tabControl1
             // 
@@ -1355,7 +1446,7 @@
             this.tabPageLogs.Controls.Add(this.dataGridViewLogger);
             this.tabPageLogs.Location = new System.Drawing.Point(4, 44);
             this.tabPageLogs.Name = "tabPageLogs";
-            this.tabPageLogs.Size = new System.Drawing.Size(1192, 752);
+            this.tabPageLogs.Size = new System.Drawing.Size(1255, 705);
             this.tabPageLogs.TabIndex = 5;
             this.tabPageLogs.Text = "Logs";
             this.tabPageLogs.UseVisualStyleBackColor = true;
@@ -1369,113 +1460,33 @@
             this.dataGridViewLogger.Name = "dataGridViewLogger";
             this.dataGridViewLogger.RowHeadersWidth = 51;
             this.dataGridViewLogger.RowTemplate.Height = 24;
-            this.dataGridViewLogger.Size = new System.Drawing.Size(1192, 752);
+            this.dataGridViewLogger.Size = new System.Drawing.Size(1255, 705);
             this.dataGridViewLogger.TabIndex = 0;
             this.dataGridViewLogger.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewLogger_CellContentClick);
             // 
-            // panel1
+            // label17
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.btnSaveDatabaseDetails);
-            this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtRoboostOrderTableName);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.UnitsComboBox);
-            this.panel1.Controls.Add(this.label20);
-            this.panel1.Controls.Add(this.txtReviewsViewName);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txtNewOrdersViewName);
-            this.panel1.Controls.Add(this.lblOrdersViewName);
-            this.panel1.Controls.Add(this.label22);
-            this.panel1.Controls.Add(this.txtPassword);
-            this.panel1.Controls.Add(this.lblReviewName);
-            this.panel1.Controls.Add(this.txtUserName);
-            this.panel1.Controls.Add(this.txtServerIP);
-            this.panel1.Controls.Add(this.txtDatabaseName);
-            this.panel1.Location = new System.Drawing.Point(6, 45);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(523, 476);
-            this.panel1.TabIndex = 18;
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(408, 578);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(133, 25);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "Total Orders";
             // 
-            // panel2
+            // countOfOrders
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.AutoScroll = true;
-            this.panel2.AutoSize = true;
-            this.panel2.Controls.Add(this.numericUpDown3);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.cmbPostOrderInterval);
-            this.panel2.Controls.Add(this.numericReviewsOrderInterval);
-            this.panel2.Controls.Add(this.numericPostOrderInterval);
-            this.panel2.Controls.Add(this.cmbPostReviewsInterval);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.btnSaveTimers);
-            this.panel2.Controls.Add(this.numericUpDown2);
-            this.panel2.Location = new System.Drawing.Point(5, 32);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(674, 192);
-            this.panel2.TabIndex = 18;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.btnSaveLogs);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.numericClearLogInterval);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.cmbClearLogInterval);
-            this.panel3.Controls.Add(this.txtLogFolderName);
-            this.panel3.Location = new System.Drawing.Point(14, 21);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(660, 111);
-            this.panel3.TabIndex = 15;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.AutoScroll = true;
-            this.panel4.Controls.Add(this.btnSaveAPIDetails);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.txtToken);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.txtAPIURL);
-            this.panel4.Location = new System.Drawing.Point(14, 29);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(660, 105);
-            this.panel4.TabIndex = 10;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.AutoScroll = true;
-            this.panel5.AutoSize = true;
-            this.panel5.Controls.Add(this.label24);
-            this.panel5.Controls.Add(this.label23);
-            this.panel5.Controls.Add(this.btn_Stores_Save);
-            this.panel5.Controls.Add(this.textBoxStores);
-            this.panel5.Location = new System.Drawing.Point(26, 32);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(682, 186);
-            this.panel5.TabIndex = 11;
+            this.countOfOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.countOfOrders.AutoSize = true;
+            this.countOfOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countOfOrders.Location = new System.Drawing.Point(568, 578);
+            this.countOfOrders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.countOfOrders.Name = "countOfOrders";
+            this.countOfOrders.Size = new System.Drawing.Size(24, 25);
+            this.countOfOrders.TabIndex = 13;
+            this.countOfOrders.Text = "0";
             // 
             // FrmMain
             // 
@@ -1497,16 +1508,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpForHours)).EndInit();
             this.grpBoxAllowedStores.ResumeLayout(false);
             this.grpBoxAllowedStores.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.grpBoxLogDetails.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericClearLogInterval)).EndInit();
             this.grpBoxDispatchOrders.ResumeLayout(false);
             this.grpBoxDispatchOrders.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericReviewsOrderInterval)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericPostOrderInterval)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.grpBoxAPIDetails.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.grpBoxDatabaseDetails.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.tabPageOrderWithReviews.ResumeLayout(false);
             this.tabPageOrderWithReviews.PerformLayout();
@@ -1523,16 +1544,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPageLogs.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewLogger)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1611,7 +1622,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tabPageOrderWithReviews;
         private System.Windows.Forms.Label count_of_OrdersWithReviews;
-        private System.Windows.Forms.Label lbl_count_orderswithreview;
+        private System.Windows.Forms.Label lbl_countOfOrderswithreview;
         private System.Windows.Forms.DataGridView dataGridViewReviewsOrders;
         private System.Windows.Forms.Panel panelUpdatedOrdersTop;
         private System.Windows.Forms.Label lblRefNumnerForUpdate;
@@ -1622,8 +1633,7 @@
         private System.Windows.Forms.TextBox txtRefNumberForUpdate;
         private System.Windows.Forms.ComboBox comboBoxFiterReviews;
         private System.Windows.Forms.TabPage tabPagePostedOrders;
-        private System.Windows.Forms.Label count_orders;
-        private System.Windows.Forms.Label lblTotalOrders;
+        private System.Windows.Forms.Label countOfOrders;
         private System.Windows.Forms.DataGridView dataGridViewPostedOrders;
         private System.Windows.Forms.Panel panelPostedOrdersTop;
         private System.Windows.Forms.Button btnClear;
@@ -1635,7 +1645,6 @@
         private System.Windows.Forms.TabPage tabPageSummary;
         private System.Windows.Forms.Label lbTextOfStatus;
         private System.Windows.Forms.Label lblStatus;
-        private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageLogs;
         private System.Windows.Forms.DataGridView dataGridViewLogger;
@@ -1647,6 +1656,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label17;
 
         //private System.Windows.Forms.Label label27;
         //private System.Windows.Forms.Label label26;

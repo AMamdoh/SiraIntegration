@@ -377,7 +377,7 @@ namespace SiraIntegration
             FillFilterStatusUnitsComboBox();
             DataGridViewStyler.Apply(dataGridViewPostedOrders);
             DataGridViewStyler.Apply(dataGridViewReviewsOrders);
-            DataGridViewStyler.Apply(dataGridViewCanceledOrders);
+        
 
 
             dataGridViewPostedOrders.CellContentClick += dataGridViewPostedOrders_CellContentClick;
@@ -935,7 +935,7 @@ namespace SiraIntegration
                     MessageBox.Show("fail to send order again");
 
               
-                LoadOrdersGeneric(dataGridViewPostedOrders, count_orders
+                LoadOrdersGeneric(dataGridViewPostedOrders, countOfOrders
                     , _orderLogService.GetFilteredOrders, "fail orders", referenceId);
 
             }
@@ -953,7 +953,7 @@ namespace SiraIntegration
         {
             string selected = GetSelectedFilter(comboBoxFilter);
 
-          LoadOrdersGeneric(dataGridViewPostedOrders, count_orders, _orderLogService.GetFilteredOrders, selected, txtRefNumber.Text.Trim());
+          LoadOrdersGeneric(dataGridViewPostedOrders, countOfOrders, _orderLogService.GetFilteredOrders, selected, txtRefNumber.Text.Trim());
 
         }
         private void comboBoxFiterReviews_SelectedIndexChanged(object sender, EventArgs e)
@@ -983,7 +983,7 @@ namespace SiraIntegration
             string refId = txtRefNumber.Text.Trim();
             string currentFilter = GetSelectedFilter(comboBoxFilter);
 
-            LoadOrdersGeneric(dataGridViewPostedOrders, count_orders, _orderLogService.GetFilteredOrders, currentFilter, refId);
+            LoadOrdersGeneric(dataGridViewPostedOrders, countOfOrders, _orderLogService.GetFilteredOrders, currentFilter, refId);
 
 
         }
@@ -1054,7 +1054,7 @@ namespace SiraIntegration
             {
                 LoadOrdersGeneric(
                     dataGridViewPostedOrders,
-                    count_orders,
+                    countOfOrders,
                     _orderLogService.GetFilteredOrders,
                     "all"
                 );
@@ -1181,7 +1181,7 @@ namespace SiraIntegration
 
         }
 
-        private void count_orders_Click(object sender, EventArgs e)
+        private void countOfOrders_Click(object sender, EventArgs e)
         {
 
         }
@@ -1197,6 +1197,21 @@ namespace SiraIntegration
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLastError_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLastSuccessActionTime_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_countOfOrderswithreview_Click(object sender, EventArgs e)
         {
 
         }
