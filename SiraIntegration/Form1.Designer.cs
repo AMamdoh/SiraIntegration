@@ -118,7 +118,8 @@
             this.txtRefNumberForUpdate = new System.Windows.Forms.TextBox();
             this.comboBoxFiterReviews = new System.Windows.Forms.ComboBox();
             this.tabPagePostedOrders = new System.Windows.Forms.TabPage();
-            this.countOfOrders = new System.Windows.Forms.Label();
+            this.count_of_order_only = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.dataGridViewPostedOrders = new System.Windows.Forms.DataGridView();
             this.panelPostedOrdersTop = new System.Windows.Forms.Panel();
             this.btnClear = new System.Windows.Forms.Button();
@@ -137,8 +138,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageLogs = new System.Windows.Forms.TabPage();
             this.dataGridViewLogger = new System.Windows.Forms.DataGridView();
-            this.label17 = new System.Windows.Forms.Label();
-            this.countOfOrders = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCanceledOrders)).BeginInit();
             this.tabPageSettings.SuspendLayout();
             this.gpBoxMaxHoursToSend.SuspendLayout();
@@ -310,7 +309,7 @@
             this.gpBoxMaxHoursToSend.Margin = new System.Windows.Forms.Padding(2);
             this.gpBoxMaxHoursToSend.Name = "gpBoxMaxHoursToSend";
             this.gpBoxMaxHoursToSend.Padding = new System.Windows.Forms.Padding(2);
-            this.gpBoxMaxHoursToSend.Size = new System.Drawing.Size(524, 149);
+            this.gpBoxMaxHoursToSend.Size = new System.Drawing.Size(575, 149);
             this.gpBoxMaxHoursToSend.TabIndex = 18;
             this.gpBoxMaxHoursToSend.TabStop = false;
             this.gpBoxMaxHoursToSend.Text = "Max Hours For Sending";
@@ -364,11 +363,11 @@
             this.grpBoxAllowedStores.Controls.Add(this.panel5);
             this.grpBoxAllowedStores.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxAllowedStores.ForeColor = System.Drawing.Color.DarkRed;
-            this.grpBoxAllowedStores.Location = new System.Drawing.Point(554, 562);
+            this.grpBoxAllowedStores.Location = new System.Drawing.Point(608, 562);
             this.grpBoxAllowedStores.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxAllowedStores.Name = "grpBoxAllowedStores";
             this.grpBoxAllowedStores.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxAllowedStores.Size = new System.Drawing.Size(679, 147);
+            this.grpBoxAllowedStores.Size = new System.Drawing.Size(625, 147);
             this.grpBoxAllowedStores.TabIndex = 10;
             this.grpBoxAllowedStores.TabStop = false;
             this.grpBoxAllowedStores.Text = "Allowed stores";
@@ -443,11 +442,11 @@
             this.grpBoxLogDetails.Controls.Add(this.panel3);
             this.grpBoxLogDetails.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxLogDetails.ForeColor = System.Drawing.Color.DarkRed;
-            this.grpBoxLogDetails.Location = new System.Drawing.Point(554, 253);
+            this.grpBoxLogDetails.Location = new System.Drawing.Point(608, 253);
             this.grpBoxLogDetails.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxLogDetails.Name = "grpBoxLogDetails";
             this.grpBoxLogDetails.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxLogDetails.Size = new System.Drawing.Size(679, 143);
+            this.grpBoxLogDetails.Size = new System.Drawing.Size(625, 143);
             this.grpBoxLogDetails.TabIndex = 10;
             this.grpBoxLogDetails.TabStop = false;
             this.grpBoxLogDetails.Text = "Log Details";
@@ -467,7 +466,7 @@
             this.panel3.Controls.Add(this.txtLogFolderName);
             this.panel3.Location = new System.Drawing.Point(14, 21);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(660, 111);
+            this.panel3.Size = new System.Drawing.Size(606, 111);
             this.panel3.TabIndex = 15;
             // 
             // label15
@@ -486,7 +485,7 @@
             // 
             this.btnSaveLogs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveLogs.Location = new System.Drawing.Point(436, 26);
+            this.btnSaveLogs.Location = new System.Drawing.Point(480, 14);
             this.btnSaveLogs.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveLogs.Name = "btnSaveLogs";
             this.btnSaveLogs.Size = new System.Drawing.Size(103, 48);
@@ -552,11 +551,11 @@
             this.grpBoxDispatchOrders.Controls.Add(this.panel2);
             this.grpBoxDispatchOrders.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxDispatchOrders.ForeColor = System.Drawing.Color.DarkRed;
-            this.grpBoxDispatchOrders.Location = new System.Drawing.Point(554, 18);
+            this.grpBoxDispatchOrders.Location = new System.Drawing.Point(603, 2);
             this.grpBoxDispatchOrders.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxDispatchOrders.Name = "grpBoxDispatchOrders";
             this.grpBoxDispatchOrders.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxDispatchOrders.Size = new System.Drawing.Size(679, 227);
+            this.grpBoxDispatchOrders.Size = new System.Drawing.Size(625, 227);
             this.grpBoxDispatchOrders.TabIndex = 5;
             this.grpBoxDispatchOrders.TabStop = false;
             this.grpBoxDispatchOrders.Text = "Dispatch Orders";
@@ -708,7 +707,7 @@
             // 
             this.btnSaveTimers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveTimers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveTimers.Location = new System.Drawing.Point(558, 70);
+            this.btnSaveTimers.Location = new System.Drawing.Point(500, 42);
             this.btnSaveTimers.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveTimers.Name = "btnSaveTimers";
             this.btnSaveTimers.Size = new System.Drawing.Size(97, 45);
@@ -734,11 +733,11 @@
             this.grpBoxAPIDetails.Controls.Add(this.panel4);
             this.grpBoxAPIDetails.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxAPIDetails.ForeColor = System.Drawing.Color.DarkRed;
-            this.grpBoxAPIDetails.Location = new System.Drawing.Point(554, 403);
+            this.grpBoxAPIDetails.Location = new System.Drawing.Point(608, 403);
             this.grpBoxAPIDetails.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxAPIDetails.Name = "grpBoxAPIDetails";
             this.grpBoxAPIDetails.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxAPIDetails.Size = new System.Drawing.Size(679, 148);
+            this.grpBoxAPIDetails.Size = new System.Drawing.Size(625, 148);
             this.grpBoxAPIDetails.TabIndex = 4;
             this.grpBoxAPIDetails.TabStop = false;
             this.grpBoxAPIDetails.Text = "API Details";
@@ -757,14 +756,14 @@
             this.panel4.Controls.Add(this.txtAPIURL);
             this.panel4.Location = new System.Drawing.Point(14, 29);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(660, 105);
+            this.panel4.Size = new System.Drawing.Size(606, 105);
             this.panel4.TabIndex = 10;
             // 
             // btnSaveAPIDetails
             // 
             this.btnSaveAPIDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSaveAPIDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveAPIDetails.Location = new System.Drawing.Point(455, 39);
+            this.btnSaveAPIDetails.Location = new System.Drawing.Point(458, 25);
             this.btnSaveAPIDetails.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaveAPIDetails.Name = "btnSaveAPIDetails";
             this.btnSaveAPIDetails.Size = new System.Drawing.Size(97, 41);
@@ -791,7 +790,7 @@
             this.txtToken.Location = new System.Drawing.Point(132, 64);
             this.txtToken.Margin = new System.Windows.Forms.Padding(2);
             this.txtToken.Name = "txtToken";
-            this.txtToken.Size = new System.Drawing.Size(297, 34);
+            this.txtToken.Size = new System.Drawing.Size(243, 34);
             this.txtToken.TabIndex = 6;
             // 
             // label7
@@ -812,7 +811,7 @@
             this.txtAPIURL.Location = new System.Drawing.Point(132, 22);
             this.txtAPIURL.Margin = new System.Windows.Forms.Padding(2);
             this.txtAPIURL.Name = "txtAPIURL";
-            this.txtAPIURL.Size = new System.Drawing.Size(297, 34);
+            this.txtAPIURL.Size = new System.Drawing.Size(243, 34);
             this.txtAPIURL.TabIndex = 5;
             // 
             // grpBoxDatabaseDetails
@@ -826,7 +825,7 @@
             this.grpBoxDatabaseDetails.Margin = new System.Windows.Forms.Padding(2);
             this.grpBoxDatabaseDetails.Name = "grpBoxDatabaseDetails";
             this.grpBoxDatabaseDetails.Padding = new System.Windows.Forms.Padding(2);
-            this.grpBoxDatabaseDetails.Size = new System.Drawing.Size(529, 522);
+            this.grpBoxDatabaseDetails.Size = new System.Drawing.Size(580, 522);
             this.grpBoxDatabaseDetails.TabIndex = 0;
             this.grpBoxDatabaseDetails.TabStop = false;
             this.grpBoxDatabaseDetails.Text = "Database Details";
@@ -858,7 +857,7 @@
             this.panel1.Controls.Add(this.txtDatabaseName);
             this.panel1.Location = new System.Drawing.Point(6, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(523, 476);
+            this.panel1.Size = new System.Drawing.Size(569, 476);
             this.panel1.TabIndex = 18;
             // 
             // btnSaveDatabaseDetails
@@ -923,6 +922,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(64, 34);
             this.numericUpDown1.TabIndex = 16;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label3
             // 
@@ -940,10 +940,10 @@
             this.UnitsComboBox.DisplayMember = "Name";
             this.UnitsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.UnitsComboBox.FormattingEnabled = true;
-            this.UnitsComboBox.Location = new System.Drawing.Point(417, 372);
+            this.UnitsComboBox.Location = new System.Drawing.Point(432, 372);
             this.UnitsComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.UnitsComboBox.Name = "UnitsComboBox";
-            this.UnitsComboBox.Size = new System.Drawing.Size(84, 35);
+            this.UnitsComboBox.Size = new System.Drawing.Size(122, 35);
             this.UnitsComboBox.TabIndex = 15;
             this.UnitsComboBox.ValueMember = "ID";
             this.UnitsComboBox.SelectedIndexChanged += new System.EventHandler(this.UnitsComboBox_SelectedIndexChanged);
@@ -1070,7 +1070,7 @@
             this.count_of_OrdersWithReviews.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.count_of_OrdersWithReviews.AutoSize = true;
             this.count_of_OrdersWithReviews.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.count_of_OrdersWithReviews.Location = new System.Drawing.Point(567, 540);
+            this.count_of_OrdersWithReviews.Location = new System.Drawing.Point(605, 657);
             this.count_of_OrdersWithReviews.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.count_of_OrdersWithReviews.Name = "count_of_OrdersWithReviews";
             this.count_of_OrdersWithReviews.Size = new System.Drawing.Size(24, 25);
@@ -1082,7 +1082,7 @@
             this.lbl_countOfOrderswithreview.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lbl_countOfOrderswithreview.AutoSize = true;
             this.lbl_countOfOrderswithreview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_countOfOrderswithreview.Location = new System.Drawing.Point(412, 540);
+            this.lbl_countOfOrderswithreview.Location = new System.Drawing.Point(458, 657);
             this.lbl_countOfOrderswithreview.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_countOfOrderswithreview.Name = "lbl_countOfOrderswithreview";
             this.lbl_countOfOrderswithreview.Size = new System.Drawing.Size(133, 25);
@@ -1094,12 +1094,13 @@
             // 
             this.dataGridViewReviewsOrders.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridViewReviewsOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewReviewsOrders.Location = new System.Drawing.Point(2, 82);
+            this.dataGridViewReviewsOrders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewReviewsOrders.Location = new System.Drawing.Point(0, 80);
             this.dataGridViewReviewsOrders.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewReviewsOrders.Name = "dataGridViewReviewsOrders";
             this.dataGridViewReviewsOrders.RowHeadersWidth = 51;
             this.dataGridViewReviewsOrders.RowTemplate.Height = 24;
-            this.dataGridViewReviewsOrders.Size = new System.Drawing.Size(1251, 638);
+            this.dataGridViewReviewsOrders.Size = new System.Drawing.Size(1255, 625);
             this.dataGridViewReviewsOrders.TabIndex = 4;
             this.dataGridViewReviewsOrders.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewReviewsOrders_CellContentClick);
             // 
@@ -1209,9 +1210,8 @@
             // 
             // tabPagePostedOrders
             // 
-            this.tabPagePostedOrders.Controls.Add(this.countOfOrders);
+            this.tabPagePostedOrders.Controls.Add(this.count_of_order_only);
             this.tabPagePostedOrders.Controls.Add(this.label17);
-            this.tabPagePostedOrders.Controls.Add(this.countOfOrders);
             this.tabPagePostedOrders.Controls.Add(this.dataGridViewPostedOrders);
             this.tabPagePostedOrders.Controls.Add(this.panelPostedOrdersTop);
             this.tabPagePostedOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1225,12 +1225,27 @@
             this.tabPagePostedOrders.UseVisualStyleBackColor = true;
             this.tabPagePostedOrders.Click += new System.EventHandler(this.tabPagePostedOrders_Click);
             // 
-            // countOfOrders
-        
+            // count_of_order_only
             // 
-            // lblTotalOrders
+            this.count_of_order_only.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.count_of_order_only.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.count_of_order_only.Location = new System.Drawing.Point(661, 661);
+            this.count_of_order_only.Name = "count_of_order_only";
+            this.count_of_order_only.Size = new System.Drawing.Size(47, 25);
+            this.count_of_order_only.TabIndex = 0;
+            this.count_of_order_only.Text = "0";
             // 
-         
+            // label17
+            // 
+            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(523, 661);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(133, 25);
+            this.label17.TabIndex = 12;
+            this.label17.Text = "Total Orders";
             // 
             // dataGridViewPostedOrders
             // 
@@ -1464,30 +1479,6 @@
             this.dataGridViewLogger.TabIndex = 0;
             this.dataGridViewLogger.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewLogger_CellContentClick);
             // 
-            // label17
-            // 
-            this.label17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(408, 578);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(133, 25);
-            this.label17.TabIndex = 12;
-            this.label17.Text = "Total Orders";
-            // 
-            // countOfOrders
-            // 
-            this.countOfOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.countOfOrders.AutoSize = true;
-            this.countOfOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countOfOrders.Location = new System.Drawing.Point(568, 578);
-            this.countOfOrders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.countOfOrders.Name = "countOfOrders";
-            this.countOfOrders.Size = new System.Drawing.Size(24, 25);
-            this.countOfOrders.TabIndex = 13;
-            this.countOfOrders.Text = "0";
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1633,7 +1624,7 @@
         private System.Windows.Forms.TextBox txtRefNumberForUpdate;
         private System.Windows.Forms.ComboBox comboBoxFiterReviews;
         private System.Windows.Forms.TabPage tabPagePostedOrders;
-        private System.Windows.Forms.Label countOfOrders;
+       // private System.Windows.Forms.Label countOfOrders;
         private System.Windows.Forms.DataGridView dataGridViewPostedOrders;
         private System.Windows.Forms.Panel panelPostedOrdersTop;
         private System.Windows.Forms.Button btnClear;
@@ -1658,6 +1649,7 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label count_of_order_only;
 
         //private System.Windows.Forms.Label label27;
         //private System.Windows.Forms.Label label26;

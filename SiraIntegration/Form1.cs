@@ -30,6 +30,9 @@ namespace SiraIntegration
 
         private DispatchOrderSettings dispatchSettings;
         private OrderLogService _orderLogService;
+        private bool _isProcessingOrders = false;
+        private bool _isProcessingOrderswithReviwes = false;
+
 
 
         private bool _isClearingLogs = false;
@@ -83,6 +86,7 @@ namespace SiraIntegration
                     SiraOrderTable = txtRoboostOrderTableName.Text,
                     RemoveOldOrdersInterval = numericUpDown1.Value,
                     RemoveOldOrdersUnit = UnitsComboBox.SelectedItem?.ToString()
+
                 };
 
                 INIHelper.SaveDatabaseSettings(settings);
@@ -153,6 +157,7 @@ namespace SiraIntegration
 
                 numericUpDown1.Value = settings.RemoveOldOrdersInterval;
                 UnitsComboBox.SelectedItem = settings.RemoveOldOrdersUnit;
+
             }
             catch (Exception ex)
             {
@@ -226,13 +231,32 @@ namespace SiraIntegration
         #region FillRemoveUnitsComboBox
         private void FillRemoveUnitsComboBox()
         {
+            UnitsComboBox.Items.Clear();
             foreach (TimerInterval interval in Enum.GetValues(typeof(TimerInterval)))
             {
                 if (interval != TimerInterval.None)
                     UnitsComboBox.Items.Add(interval);
             }
 
-            UnitsComboBox.SelectedItem = TimerInterval.Minutes;
+            try
+            {
+                var settings = INIHelper.LoadDatabaseSettings();
+                string savedUnit = settings?.RemoveOldOrdersUnit;
+
+                if (!string.IsNullOrEmpty(savedUnit) &&
+                    Enum.TryParse<TimerInterval>(savedUnit, out var selectedInterval))
+                {
+                    UnitsComboBox.SelectedItem = selectedInterval;
+                }
+                else
+                {
+                    UnitsComboBox.SelectedItem = TimerInterval.Minutes;
+                }
+            }
+            catch
+            {
+                UnitsComboBox.SelectedItem = TimerInterval.Minutes;
+            }
         }
 
         #endregion
@@ -448,8 +472,8 @@ namespace SiraIntegration
 
                 logTimer.Start();
 
-                int deleted = await _orderLogService.ClearOldLogsAsync();
-                var folder = logSettings.Folder ?? "";
+              //  int deleted = await _orderLogService.ClearOldLogsAsync();
+               // var folder = logSettings.Folder ?? "";
 
             }
             catch (Exception ex)
@@ -466,29 +490,23 @@ namespace SiraIntegration
 
             try
             {
-                logTimer.Stop();
+                _logger.LogInformation("Starting old logs cleanup cycle...");
 
                 int deleted = await _orderLogService.ClearOldLogsAsync();
 
-                var okMsg = $"{DateTime.Now:u}  Deleted {deleted} rows (SentTime < today).";
-         
-                _logger.LogInformation( "  {Message}", okMsg);
-                _memoryLogger.LogInfo($"Message {okMsg}");
-
-
+                var okMsg = $"{DateTime.Now:u}  Deleted {deleted} old log rows.";
+                _logger.LogInformation(okMsg);
+                _memoryLogger.LogInfo(okMsg);
             }
             catch (Exception ex)
             {
-                var errMsg = $"{DateTime.Now:u}  {ex}";
-            
-                _logger.LogError(ex, "  {Message}", errMsg);
-                _memoryLogger.LogInfo($"Message {errMsg}");
-
+                string errorDetails = $"Error during log cleanup: [{ex.GetType().Name}] {ex.Message}";
+                _logger.LogError(ex, errorDetails);
+                _memoryLogger.LogError(errorDetails); 
             }
             finally
             {
                 _isClearingLogs = false;
-                logTimer.Start();
             }
         }
 
@@ -598,27 +616,34 @@ namespace SiraIntegration
 
         private async void PostOrderTimer_Tick(object sender, EventArgs e)
         {
-            timer1.Stop();
+            if (_isProcessingOrders) 
+            {
+                return; 
+            }
+
+            _isProcessingOrders = true;
 
             _logger.LogInformation("Starting the 'Post Orders' cycle...");
             _memoryLogger.LogInfo("Checking for new orders to send...");
+
 
             try
             {
                 await ProcessAndSendOrdersAsync();
 
-                _logger.LogInformation("'Post Orders' cycle completed successfully.");
-                _memoryLogger.LogInfo("Order processing cycle finished.");
+ 
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "A critical error occurred during the 'Post Orders' cycle.");
-                _memoryLogger.LogError($"Error processing orders: {ex.Message}");
+                string errorDetails = $"Error: [{ex.GetType().Name}] {ex.Message}";
+                _memoryLogger.LogError(errorDetails);
             }
             finally
             {
                 _logger.LogInformation("========================================\n");
-                timer1.Start();
+                // timer1.Start();
+                _isProcessingOrders = false;
             }
         }
 
@@ -651,6 +676,11 @@ namespace SiraIntegration
 
         private async Task ProcessAndSendOrdersAsync()
         {
+
+            _logger.LogInformation("Starting order processing batch...");
+            _memoryLogger.LogInfo("Starting new batch order processing...");
+
+
             var timerSettings = INIHelper.LoadTimerSettings();
             var count = timerSettings.OrdersCount;
 
@@ -677,9 +707,7 @@ namespace SiraIntegration
             var sendTasks = orders.Select(o => RoboostService.SendSiraOrderAsync(o, _logger,_memoryLogger));
 
             _logger.LogInformation("Attempting to send a batch of {OrderCount} orders...", orders.Count);
-            _memoryLogger.LogInfo(" Sending {orders.Count} orders to the integration partner..."); 
-
-            try
+            _memoryLogger.LogInfo($"Sending {orders.Count} orders to the integration partner..."); try
             {
     
                 await Task.WhenAll(sendTasks);
@@ -692,7 +720,8 @@ namespace SiraIntegration
             {
 
                 _logger.LogError(ex, "An error occurred while dispatching a batch of {OrderCount} orders. One or more tasks failed.", orders.Count);
-                _memoryLogger.LogError( $"Failed to send a batch of {orders.Count} orders"); 
+                string errorDetails = $"Failed to send batch of {orders.Count} orders. Error: [{ex.GetType().Name}] {ex.Message}";
+                _memoryLogger.LogError(errorDetails);
             }
             finally
             {
@@ -935,7 +964,7 @@ namespace SiraIntegration
                     MessageBox.Show("fail to send order again");
 
               
-                LoadOrdersGeneric(dataGridViewPostedOrders, countOfOrders
+                LoadOrdersGeneric(dataGridViewPostedOrders, count_of_order_only
                     , _orderLogService.GetFilteredOrders, "fail orders", referenceId);
 
             }
@@ -953,7 +982,7 @@ namespace SiraIntegration
         {
             string selected = GetSelectedFilter(comboBoxFilter);
 
-          LoadOrdersGeneric(dataGridViewPostedOrders, countOfOrders, _orderLogService.GetFilteredOrders, selected, txtRefNumber.Text.Trim());
+          LoadOrdersGeneric(dataGridViewPostedOrders, count_of_order_only, _orderLogService.GetFilteredOrders, selected, txtRefNumber.Text.Trim());
 
         }
         private void comboBoxFiterReviews_SelectedIndexChanged(object sender, EventArgs e)
@@ -983,7 +1012,7 @@ namespace SiraIntegration
             string refId = txtRefNumber.Text.Trim();
             string currentFilter = GetSelectedFilter(comboBoxFilter);
 
-            LoadOrdersGeneric(dataGridViewPostedOrders, countOfOrders, _orderLogService.GetFilteredOrders, currentFilter, refId);
+            LoadOrdersGeneric(dataGridViewPostedOrders, count_of_order_only, _orderLogService.GetFilteredOrders, currentFilter, refId);
 
 
         }
@@ -1054,7 +1083,7 @@ namespace SiraIntegration
             {
                 LoadOrdersGeneric(
                     dataGridViewPostedOrders,
-                    countOfOrders,
+                    count_of_order_only,
                     _orderLogService.GetFilteredOrders,
                     "all"
                 );
@@ -1212,6 +1241,11 @@ namespace SiraIntegration
         }
 
         private void lbl_countOfOrderswithreview_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
 
         }
