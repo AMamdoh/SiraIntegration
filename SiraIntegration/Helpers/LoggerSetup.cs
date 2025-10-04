@@ -21,15 +21,17 @@ namespace SiraIntegration.Helpers
                 Directory.CreateDirectory(logFolder);
             }
 
-            var logFile = Path.Combine(logFolder, "Sira-.json");
+            var logFile = Path.Combine(logFolder, "Sira-.txt");
 
             Log.Logger = new LoggerConfiguration()
+                .Enrich.WithProperty("Application", "SiraIntegration")
       .MinimumLevel.Information()
       .WriteTo.File(
-    path: logFile,
-    outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}",
-    rollingInterval: RollingInterval.Day,
-    retainedFileCountLimit: 3
+        path: logFile,
+
+      outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] [{Application}] {Message:lj}{NewLine}",
+        rollingInterval: RollingInterval.Day,
+        retainedFileCountLimit: 3
 )
 
 

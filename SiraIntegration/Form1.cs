@@ -694,14 +694,10 @@ namespace SiraIntegration
             var orders = OrderRepository.GetOrdersToSend(count, _logger, _memoryLogger, cutoff);
             if (orders == null || orders.Count == 0)
             {
-                _logger.LogInformation(
-                    "Skipping order dispatch cycle. No new orders found within the time window. [Cutoff: {Cutoff}, MaxHours: {MaxHours}]",
-                    cutoff,
-                    maxHours
-                );
-                _memoryLogger.LogInfo($"No new orders found. " +
-                    $"Search was limited to orders after {cutoff:yyyy-MM-dd HH:mm:ss} and not older than {maxHours} hours.");
-
+                _logger.LogDebug(
+            "No new orders found within the time window. [Cutoff: {Cutoff}, MaxHours: {MaxHours}]",
+            cutoff, maxHours);
+                _memoryLogger.LogInfo("No new orders found to process.");
                 return;
             }
             var sendTasks = orders.Select(o => RoboostService.SendSiraOrderAsync(o, _logger,_memoryLogger));
