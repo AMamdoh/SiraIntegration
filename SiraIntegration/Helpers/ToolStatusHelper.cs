@@ -23,7 +23,7 @@ namespace SiraIntegration.Helpers
                     logFolder = @"C:\Roboost\SiraLogs";
                 }
 
-                string logFilePath = Path.Combine(logFolder, $"Sira-{DateTime.Now:yyyyMMdd}.json");
+                string logFilePath = Path.Combine(logFolder, $"Sira-{DateTime.Now:yyyyMMdd}.txt");
 
                 if (!File.Exists(logFilePath))
                 {
