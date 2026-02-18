@@ -1245,6 +1245,16 @@ namespace SiraIntegration
         {
 
         }
+
+        private void ReviewTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

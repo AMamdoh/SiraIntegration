@@ -104,9 +104,15 @@ namespace SiraIntegration.Integration
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "An unexpected exception occurred while sending Sira order {OrderNumber}.", siraOrder.OrderNumber);
-                memoryLogger.LogError($"A critical error occurred sending Sira order {siraOrder.OrderNumber}. Check the file log.");
+                logger.LogError(ex, "Exception while sending Sira order {OrderNumber}. Error: {ErrorMessage}",
+                    siraOrder.OrderNumber, ex.Message);
 
+
+                string fullError = ex.InnerException != null
+                    ? $"{ex.Message} | Inner: {ex.InnerException.Message}"
+                    : ex.Message;
+
+                memoryLogger.LogError($"Failed to send Order {siraOrder.OrderNumber}. Reason: {fullError}");
 
                 return false;
             }
@@ -118,7 +124,7 @@ namespace SiraIntegration.Integration
      
 
             string sqlCheck = $@"SELECT TOP 1 Version, RetriesCount 
-                             FROM [{tableName}] 
+                             FROM {tableName}
                              WHERE ReferenceID = @ReferenceID";
 
             var existingLog = DapperHelper.Get<(int Version, int RetriesCount)?>(sqlCheck, new { orderLog.ReferenceID });
@@ -138,7 +144,7 @@ namespace SiraIntegration.Integration
             orderLog.Version = existingLog.Version;
             orderLog.RetriesCount = existingLog.RetriesCount + 1;
 
-            string updateSql = $@"UPDATE [{tableName}] 
+            string updateSql = $@"UPDATE {tableName}
                               SET SentTime = @SentTime, 
                                   ResponseTime = @ResponseTime, 
                                   Response = @Response, 
@@ -157,7 +163,7 @@ namespace SiraIntegration.Integration
             orderLog.Version = 1;
             orderLog.RetriesCount = 0;
 
-            string firstInsertSql = $@"INSERT INTO [{tableName}] 
+            string firstInsertSql = $@"INSERT INTO {tableName}
                                    (ReferenceID, SentTime, ResponseTime, Payload, Response, IsSuccess, Version, RetriesCount, LastUpdated)
                                    VALUES 
                                    (@ReferenceID, @SentTime, @ResponseTime, @Payload, @Response, @IsSuccess, @Version, @RetriesCount, @LastUpdated)";

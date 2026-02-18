@@ -13,10 +13,10 @@ namespace SiraIntegration.Helpers
 
         public static void SetConnection(string serverIp, string databaseName, string userId, string password)
         {
-            _connectionString = $"Server={serverIp};Database={databaseName};Integrated Security=True;";
+           // _connectionString = $"Server={serverIp};Database={databaseName};Integrated Security=True;";
             
 
-            // _connectionString = $"Server={serverIp};Database={databaseName};User Id={userId};Password={password};";
+             _connectionString = $"Server={serverIp};Database={databaseName};User Id={userId};Password={password};";
         }
 
         public static T Get<T>(string sql, object parameters = null)

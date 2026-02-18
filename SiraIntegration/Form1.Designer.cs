@@ -142,7 +142,6 @@
             this.tabPageSettings.SuspendLayout();
             this.gpBoxMaxHoursToSend.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpForHours)).BeginInit();
-            this.grpBoxAllowedStores.SuspendLayout();
             this.panel5.SuspendLayout();
             this.grpBoxLogDetails.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -279,8 +278,13 @@
             this.logTimer.Interval = 1000;
             this.logTimer.Tick += new System.EventHandler(this.logTimer_Tick);
             // 
+            // ReviewTimer
+            // 
+            this.ReviewTimer.Tick += new System.EventHandler(this.ReviewTimer_Tick);
+            // 
             // tabPageSettings
             // 
+            this.tabPageSettings.Controls.Add(this.panel5);
             this.tabPageSettings.Controls.Add(this.gpBoxMaxHoursToSend);
             this.tabPageSettings.Controls.Add(this.grpBoxAllowedStores);
             this.tabPageSettings.Controls.Add(this.grpBoxLogDetails);
@@ -360,7 +364,6 @@
             // 
             this.grpBoxAllowedStores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpBoxAllowedStores.Controls.Add(this.panel5);
             this.grpBoxAllowedStores.Font = new System.Drawing.Font("Arial Narrow", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpBoxAllowedStores.ForeColor = System.Drawing.Color.DarkRed;
             this.grpBoxAllowedStores.Location = new System.Drawing.Point(608, 562);
@@ -383,7 +386,7 @@
             this.panel5.Controls.Add(this.label23);
             this.panel5.Controls.Add(this.btn_Stores_Save);
             this.panel5.Controls.Add(this.textBoxStores);
-            this.panel5.Location = new System.Drawing.Point(26, 32);
+            this.panel5.Location = new System.Drawing.Point(608, 562);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(682, 186);
             this.panel5.TabIndex = 11;
@@ -395,7 +398,7 @@
             this.label24.Location = new System.Drawing.Point(2, 34);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(149, 29);
+            this.label24.Size = new System.Drawing.Size(120, 23);
             this.label24.TabIndex = 0;
             this.label24.Text = "Stores codes :";
             // 
@@ -406,7 +409,7 @@
             this.label23.Location = new System.Drawing.Point(2, 115);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(678, 29);
+            this.label23.Size = new System.Drawing.Size(588, 23);
             this.label23.TabIndex = 10;
             this.label23.Text = "write a comma seperated codes [1,2,3, ...]. Leave empty to get all stores";
             this.label23.Click += new System.EventHandler(this.label23_Click);
@@ -585,6 +588,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(674, 192);
             this.panel2.TabIndex = 18;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // numericUpDown3
             // 
@@ -1494,11 +1498,10 @@
             this.Load += new System.EventHandler(this.FrmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCanceledOrders)).EndInit();
             this.tabPageSettings.ResumeLayout(false);
+            this.tabPageSettings.PerformLayout();
             this.gpBoxMaxHoursToSend.ResumeLayout(false);
             this.gpBoxMaxHoursToSend.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpForHours)).EndInit();
-            this.grpBoxAllowedStores.ResumeLayout(false);
-            this.grpBoxAllowedStores.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.grpBoxLogDetails.ResumeLayout(false);

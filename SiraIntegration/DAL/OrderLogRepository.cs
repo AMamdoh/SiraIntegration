@@ -30,7 +30,7 @@ namespace SiraIntegration.DAL
 
 
             string sql = $@"
-        DELETE FROM [{tableName}]
+        DELETE FROM {tableName}
         WHERE SentTime IS NOT NULL
         AND SentTime < CAST(GETDATE() AS date);";
 
@@ -84,7 +84,7 @@ namespace SiraIntegration.DAL
             if (conditions.Any())
                 query += " WHERE " + string.Join(" AND ", conditions);
 
-            query += " ORDER BY SentTime ASC"; //added
+            query += " ORDER BY SentTime DESC"; //added
 
             return DapperHelper.GetList<CreatedOrder>(
                 query,
@@ -106,7 +106,7 @@ namespace SiraIntegration.DAL
         {
             string sql = $@"
                   SELECT TOP 1 ResponseTime
-            FROM [{tableName}]
+            FROM {tableName}
             WHERE IsSuccess = 1 
             ORDER BY LastUpdated DESC;
             ";

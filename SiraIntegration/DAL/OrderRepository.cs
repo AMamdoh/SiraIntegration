@@ -80,14 +80,14 @@ namespace SiraIntegration.DAL
 
             string partialSelect = $@"
             SELECT TOP (@Count) *
-            FROM [{settings.NewOrdersView}] o
+            FROM {settings.NewOrdersView} o
             WHERE 
                 (@Cutoff IS NULL OR  o.[Date] >= @Cutoff)
                 AND NOT EXISTS (
                     SELECT 1 
-                    FROM [{tableName}] l 
+                    FROM {tableName} l 
                     WHERE l.ReferenceID = o.orderNumber
-                )";
+AND CAST(l.SentTime AS DATE) = CAST(o.[Date] AS DATE))";
 
 
             string orderBy = " ORDER BY o.[Date] DESC;";
@@ -106,7 +106,7 @@ namespace SiraIntegration.DAL
             else
             {
                 sql = partialSelect + $@"
-                      AND o.StoreCode IN ('{ string.Join("','", allowedStores.StoreCodes)}')" + orderBy;
+                      AND o.locationCode IN ('{ string.Join("','", allowedStores.StoreCodes)}')" + orderBy;
 
                 parameters = new
                 {
