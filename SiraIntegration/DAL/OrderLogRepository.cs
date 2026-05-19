@@ -86,7 +86,7 @@ namespace SiraIntegration.DAL
             if (conditions.Any())
                 query += " WHERE " + string.Join(" AND ", conditions);
 
-            query += " ORDER BY SentTime DESC"; //added
+            query += " ORDER BY SentTime DESC"; //added//added
 
             return DapperHelper.GetList<CreatedOrder>(
                 query,
