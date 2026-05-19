@@ -25,6 +25,8 @@ namespace SiraIntegration.DAL
         public async Task<int> ClearOldLogsAsync(ILogger logger, UiLogger memoryLogger)
         {
             logger.LogInformation("starting the 'Clear Old Logs' maintenance task...");
+
+           // logger.LogInformation("starting the 'Clear Old Logs' maintenance task...");
             memoryLogger.LogInfo("Cleaning up old log records...");
 
 
