@@ -21,7 +21,7 @@ namespace SiraIntegration.DAL
 
             tableName = settings.SiraOrderTable?? "Sira_Log";
         }
-
+        //update
         public async Task<int> ClearOldLogsAsync(ILogger logger, UiLogger memoryLogger)
         {
             logger.LogInformation("Starting the 'Clear Old Logs' maintenance task...");
