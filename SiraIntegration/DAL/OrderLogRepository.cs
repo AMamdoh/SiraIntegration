@@ -53,8 +53,11 @@ namespace SiraIntegration.DAL
             catch (Exception ex)
             {
                 logger.LogError(ex,
-                    "A critical error occurred while clearing old logs from the '{TableName}' table.",
+                    "critical error occurred while clearing old logs from the '{TableName}' table.",
                     tableName);
+                logger.LogError(ex,
+                   "critical error occurred while clearing old logs from the '{TableName}' table.",
+                   tableName);
 
                 memoryLogger.LogError($"Failed to clean up old logs. Please check the file log for details.");
 
