@@ -10,6 +10,7 @@ namespace SiraIntegration.Helpers.Settings
     {
         public string Url { get; set; }
         public string Token { get; set; }
+        public string CompanyId { get; set; }
     }
 
 }

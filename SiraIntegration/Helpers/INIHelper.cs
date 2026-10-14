@@ -89,6 +89,7 @@ namespace SiraIntegration.Helpers
             var data = parser.ReadFile(Constants.CONFIG_FILE);
             data["API"]["URL"] = settings.Url;
             data["API"]["Token"] = settings.Token;
+            data["API"]["CompanyId"] = settings.CompanyId ?? "";
 
             parser.WriteFile(Constants.CONFIG_FILE, data);
         }
@@ -102,7 +103,8 @@ namespace SiraIntegration.Helpers
             return new ApiSettings
             {
                 Url = data["API"]["URL"],
-                Token = data["API"]["Token"]
+                Token = data["API"]["Token"],
+                CompanyId = data["API"]["CompanyId"]
             };
         }
 

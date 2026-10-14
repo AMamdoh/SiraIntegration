@@ -117,10 +117,22 @@ namespace SiraIntegration
                 MessageBox.Show("Please fill in both API URL and Token.", "Validation");
                 return;
             }
+            // Keep the CompanyId that is already stored in the config file; it is not editable from this form.
+            string companyId = null;
+            try
+            {
+                companyId = INIHelper.LoadAPISettings()?.CompanyId;
+            }
+            catch
+            {
+                // first run: the config file may not have an [API] section yet
+            }
+
             ApiSettings settings = new ApiSettings
             {
                 Url = apiUrl,
-                Token = token
+                Token = token,
+                CompanyId = companyId
             };
 
             try

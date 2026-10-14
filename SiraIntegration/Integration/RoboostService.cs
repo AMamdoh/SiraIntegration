@@ -21,6 +21,7 @@ namespace SiraIntegration.Integration
     {
         private static readonly string _baseUrl;
         private static readonly string _token;
+        private static readonly string _companyId;
 
         private static readonly string _createUrl;
 
@@ -35,9 +36,10 @@ namespace SiraIntegration.Integration
 
             _baseUrl = settings.Url.TrimEnd('/');
             _token = settings.Token;
+            _companyId = settings.CompanyId?.Trim();
 
             _createUrl = $"{_baseUrl}/POS/CreateOrder";
-      
+
         }
 
         private static readonly HttpClient client = new HttpClient();
@@ -50,30 +52,58 @@ namespace SiraIntegration.Integration
             try
             {
                 string trimmedToken = _token.Trim();
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", trimmedToken);
 
                 var jsonPayload = JsonConvert.SerializeObject(siraOrder);
-                var content = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+
+                var request = new HttpRequestMessage(HttpMethod.Post, _createUrl)
+                {
+                    Content = new StringContent(jsonPayload, Encoding.UTF8, "application/json")
+                };
+
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", trimmedToken);
+                request.Headers.UserAgent.ParseAdd("SiraIntegration/1.0");
+
+                if (!string.IsNullOrWhiteSpace(_companyId))
+                {
+                    request.Headers.Add("x-company-id", _companyId);
+                }
+                else
+                {
+                    logger.LogWarning("CompanyId is missing from the [API] section of the configuration file. Sira will reject the request with 401 Unauthorized.");
+                    memoryLogger.LogError("CompanyId is not configured. Add CompanyId under [API] in the configuration file.");
+                }
 
                 var sentTime = DateTime.Now;
-                var response = await client.PostAsync(_createUrl, content);
+                var response = await client.SendAsync(request);
                 var responseTime = DateTime.Now;
                 var responseContent = await response.Content.ReadAsStringAsync();
 
-                bool isSuccess = false;
-                string apiMessage = "No message returned";
+                int statusCode = (int)response.StatusCode;
 
-                try
+                // Always keep the raw response, prefixed with the status code, so failures are visible in the log table.
+                string rawResponse = $"HTTP {statusCode} {response.ReasonPhrase}{Environment.NewLine}{responseContent}";
+
+                bool isSuccess = false;
+                string apiMessage = null;
+
+                if (!string.IsNullOrWhiteSpace(responseContent))
                 {
-                    var siraResponse = JsonConvert.DeserializeObject<SiraResponse>(responseContent);
-                    isSuccess = siraResponse?.IsSuccess ?? false;
-                    apiMessage = siraResponse?.Message ?? apiMessage;
+                    try
+                    {
+                        var siraResponse = JsonConvert.DeserializeObject<SiraResponse>(responseContent);
+                        isSuccess = siraResponse?.IsSuccess ?? false;
+                        apiMessage = siraResponse?.Message;
+                    }
+                    catch (Exception ex)
+                    {
+                        logger.LogError(ex, "Failed to deserialize response for Sira order {OrderNumber}. HTTP {StatusCode}. Raw Response: {RawResponse}", siraOrder.OrderNumber, statusCode, responseContent);
+                        apiMessage = $"Unexpected response body: {Truncate(responseContent, 500)}";
+                    }
                 }
-                catch (Exception ex)
+
+                if (string.IsNullOrWhiteSpace(apiMessage))
                 {
-                    logger.LogError(ex, "Failed to deserialize response for Sira order {OrderNumber}. Raw Response: {RawResponse}", siraOrder.OrderNumber, responseContent);
-                    memoryLogger.LogError($"Received an invalid response for Sira order {siraOrder.OrderNumber}.");
-                    apiMessage = "Invalid response format from Sira";
+                    apiMessage = DescribeStatus(statusCode, responseContent);
                 }
 
                 var orderLog = new Sira_Log
@@ -82,23 +112,23 @@ namespace SiraIntegration.Integration
                     SentTime = sentTime,
                     ResponseTime = responseTime,
                     Payload = jsonPayload,
-                    Response = responseContent,
+                    Response = rawResponse,
                     IsSuccess = isSuccess,
                     LastUpdated = DateTime.Now,
-                    
+
                 };
                 SaveSiraOrderLog(orderLog, logger);
 
                 if (isSuccess)
                 {
-                    logger.LogInformation("Sira order {OrderNumber} dispatched successfully. API Message: {ApiMessage}", siraOrder.OrderNumber, apiMessage);
-                    memoryLogger.LogInfo($"Sira order {siraOrder.OrderNumber} was successfully sent.");
+                    logger.LogInformation("Sira order {OrderNumber} dispatched successfully. HTTP {StatusCode}. API Message: {ApiMessage}", siraOrder.OrderNumber, statusCode, apiMessage);
+                    memoryLogger.LogInfo($"Sira order {siraOrder.OrderNumber} was successfully sent. (HTTP {statusCode}) {apiMessage}");
                     return true;
                 }
                 else
                 {
-                    logger.LogWarning("API reported failure for Sira order {OrderNumber}. API Response: {ApiResponse}", siraOrder.OrderNumber, apiMessage);
-                    memoryLogger.LogError($"Failed to send Sira order {siraOrder.OrderNumber}. Reason: {apiMessage}");
+                    logger.LogWarning("API reported failure for Sira order {OrderNumber}. HTTP {StatusCode}. Raw Response: {RawResponse}", siraOrder.OrderNumber, statusCode, rawResponse);
+                    memoryLogger.LogError($"Failed to send Sira order {siraOrder.OrderNumber}. (HTTP {statusCode}) {apiMessage}");
                     return false;
                 }
             }
@@ -118,6 +148,36 @@ namespace SiraIntegration.Integration
             }
         }
 
+
+        /// <summary>Explains an empty or non-JSON response so the UI never shows a blank reason.</summary>
+        private static string DescribeStatus(int statusCode, string responseContent)
+        {
+            bool hasBody = !string.IsNullOrWhiteSpace(responseContent);
+
+            switch (statusCode)
+            {
+                case 401:
+                    return "Unauthorized (401): the token is invalid/expired, or the x-company-id header is missing.";
+                case 403:
+                    return hasBody && responseContent.IndexOf("cloudflare", StringComparison.OrdinalIgnoreCase) >= 0
+                        ? "Forbidden (403): the request was blocked by Cloudflare before reaching Sira."
+                        : "Forbidden (403): this user has no access to the configured company.";
+                case 400:
+                    return $"Bad request (400): {Truncate(responseContent, 500)}";
+                default:
+                    return hasBody
+                        ? $"HTTP {statusCode}: {Truncate(responseContent, 500)}"
+                        : $"HTTP {statusCode}: the server returned an empty body.";
+            }
+        }
+
+        private static string Truncate(string value, int maxLength)
+        {
+            if (string.IsNullOrEmpty(value) || value.Length <= maxLength)
+                return value;
+
+            return value.Substring(0, maxLength) + "...";
+        }
 
         private static void SaveSiraOrderLog(Sira_Log orderLog, ILogger logger)
         {
